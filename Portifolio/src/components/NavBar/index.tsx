@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss"
-import icone from "../../imgs/icone.png"
 
 import Button from "../Button"
 
@@ -8,7 +7,7 @@ export default function NavBar() {
         <>
             <div className={styles.main}>
                 <div className={styles.menuEsquerda}>
-                    <img src={icone} alt="icone" className={styles.icone} />
+                    <span className={styles.icone}>F</span>
                     <h1 className={styles.nameTitle}><span style={{fontWeight: "bold"}}>Felipe</span> Pereira</h1>
                 </div>
                 <div className={styles.menuDireita}>

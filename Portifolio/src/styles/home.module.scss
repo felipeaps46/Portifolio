@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
+.main {
+    padding: 0 5rem;
+
+    .secaoInicial {
+        display: flex;
+        width: 100%;
+        margin-top: 5rem;
+        height: 50vh;
+
+        .secaoInicial_Esquerda {
+            display: flex;
+            width: 45%;
+            justify-content: flex-end;
+            padding-right: 7rem;
+
+            .imagemPessoal {
+                width: 70%;
+                border-radius: 8px;
+
+            }
+        }
+
+        .secaoInicial_Direita {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 2rem;
+            padding-right: 7rem;
+
+            .subtitulo {
+                color: black;
+                font-weight: 200;
+                font-size: 1.5rem;
+                margin: 0;
+                padding: 0;
+            }
+
+            .titulo {
+                color: #202020;
+                font-size: 3.5rem;
+                font-weight: bolder;
+                margin: 0;
+                padding: 0;
+            }
+
+            .descricao {
+                color: gray;
+                margin-bottom: 40px;
+                padding-right: 6rem;
+            }
+
+            .secaoInicial_btnsContainer {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+
+                .btnCurriculum {
+                    background-color: white;
+                    color: #1E90FF;
+                    border: 3px solid #1E90FF;
+                    border-radius: 10px;
+                    padding: 10px 25px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #1E90FF;
+                        color: white;
+                        box-shadow: 0px 0px 10px #1E90FF;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    cursor: pointer;
+
+                    .btnText {
+                        font-weight: bold;
+                        font-size: 1rem;
+
+                        font-family: "Poppins", sans-serif;
+
+
+                    }
+
+
+                    .iconeDowload {
+                        padding-right: 0.5rem;
+                    }
+                }
+
+                .btnContato {
+                    padding: 10px 25px;
+                    text-decoration: none;
+                    border: 2px solid #ccc;
+                    border-radius: 10px;
+                    color: gray;
+                    box-shadow: 0px 0px 20px #ccc;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+
+                    &:hover {
+                        background: #ccc;
+                        color: #202020;
+                        transition: 0.3s ease;
+                    }
+
+                    .btnText {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        font-family: "Poppins", sans-serif;
+
+                    }
+                }
+            }
+        }
+    }
+}
