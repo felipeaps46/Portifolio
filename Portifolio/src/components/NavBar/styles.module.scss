@@ -1,0 +1,54 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem;
+
+    .menuEsquerda {
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .icone{
+            width: 4rem;
+            margin-right: 1rem;
+        }
+
+        .nameTitle{
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+
+
+    }
+
+    .menuDireita {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem;
+
+        .linkText{
+            text-decoration: none;
+            color: grey;
+            font-size: 1.2rem;
+            transition: 0.2s ease;
+            font-weight: 500;
+
+            &:hover{
+                color: #0080FF;
+                transition: 0.2s ;
+            }
+
+        }
+
+        .btnContainer {
+            align-items: center;
+            justify-content: center;
+            margin-left: 3rem;
+        }
+    }
+}

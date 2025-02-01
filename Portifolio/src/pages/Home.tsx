@@ -1,9 +1,13 @@
 import styles from "../styles/home.module.scss"
 
-export default function Home (){
-    return(
-        <>
+import NavBar from "../components/NavBar"
 
+export default function Home() {
+    return (
+        <>
+            <div className={styles.main}>
+                <NavBar></NavBar>
+            </div>
         </>
     )
 }
