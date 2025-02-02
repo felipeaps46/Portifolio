@@ -99,7 +99,7 @@
                     border: 2px solid #ccc;
                     border-radius: 10px;
                     color: gray;
-                    box-shadow: 0px 0px 20px #ccc;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                     cursor: pointer;
                     transition: 0.3s;
 
@@ -108,6 +108,8 @@
                         background: #ccc;
                         color: #202020;
                         transition: 0.3s ease;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
+                       
                     }
 
                     .btnText {
@@ -118,6 +120,91 @@
                     }
                 }
             }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .secaoSobre {
+        width: 100%;
+
+        .secaoSobre_Content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+
+            .secaoSobre_Esquerda {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding: 5rem 12rem 7rem 10rem;
+            }
+
+            .secaoSobre_Direita {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 12rem;
+                padding-bottom: 6rem;
+
+
+
+
+            }
+        }
+    }
+
+
+
+
+
+
+    .secaoHabilidades {
+        display: flex;
+        flex-direction: column;
+
+        .cardsContainer {
+            width: 100%;
+            padding: 7rem;
+        }
+    }
+
+
+}
+
+.tituloSecao {
+    font-size: 1.65rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+
+    .titulo {
+        border-bottom: 8px solid #1E90FF;
+        transition: 0.5s border-bottom ease-in;
+
+        &:hover {
+            border-bottom: 8px solid #FFD700;
         }
     }
 }

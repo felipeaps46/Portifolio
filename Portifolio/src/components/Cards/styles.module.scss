@@ -1,0 +1,42 @@
+.main{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+
+
+    .itemContainer{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #aaa;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        width: 10%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        .iconContainer{
+            justify-content: center;
+            text-align: center;
+
+            .icon{
+                font-size: 2rem;
+            }
+
+
+        }
+
+        .textContainer{
+            justify-content: center;
+
+            .titulo{
+                text-align: center;
+
+            }
+        }
+
+
+    }
+}
