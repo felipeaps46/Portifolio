@@ -3,6 +3,7 @@ import styles from "../styles/home.module.scss"
 import NavBar from "../components/NavBar"
 import Animation from "../components/Animation"
 import Cards from "../components/Cards"
+import Button from "../components/Button"
 
 import useDocumentTitle from "../hooks/useDocumentTitle"
 import useFavicon from "../hooks/useFavicon"
@@ -11,9 +12,10 @@ import Icone from "../imgs/icone.png"
 import ImagemPessoal from "../imgs/imagemPessoal.jpeg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faDownload } from "@fortawesome/free-solid-svg-icons"
+import { faDownload, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 
 import { HabilidadesData } from "../data/HabilidadesData"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 
 
@@ -63,7 +65,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className={styles.secaoHabilidades}>
-                    <div className={styles.tituloSecao}>
+                    <div className={styles.tituloSecao} style={{ marginTop: "4rem" }}>
                         <h2 className={styles.titulo}>Habilidades</h2>
                     </div>
                     <div className={styles.cardsContainer}>
@@ -79,6 +81,25 @@ export default function Home() {
                 <section className={styles.secaoContato}>
                     <div className={styles.tituloSecao}>
                         <h2 className={styles.titulo}>Contato</h2>
+                    </div>
+                    <div className={styles.secaoContato_Content}>
+                        <div className={styles.secaoContato_Esquerda}>
+                            <h2 className={styles.titulo}>Felipe Pereira</h2>
+                            <div className={styles.contatoEmailContainer}>
+                                <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+                                <p>Email: felipeaps0918@gmail.com</p>
+                            </div>
+                            <div className={styles.contatoTelefoneContainer}>
+                                <FontAwesomeIcon icon={faPhone} className={styles.icon} />
+                                <p>Telefone: +55 (31) 97131-6645</p>
+                            </div>
+                            <div className={styles.btnContainer}>
+                                <Button label="Enviar Mensagem" icon={faWhatsapp} />
+                            </div>
+                            </div>
+                    </div>
+                    <div className={styles.secaoContato_Direita}>
+
                     </div>
                 </section>
             </div>

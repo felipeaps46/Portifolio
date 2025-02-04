@@ -109,7 +109,7 @@
                         color: #202020;
                         transition: 0.3s ease;
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 10px;
-                       
+
                     }
 
                     .btnText {
@@ -182,14 +182,64 @@
     .secaoHabilidades {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         .cardsContainer {
-            width: 100%;
+            max-width: 100vw;
             padding: 7rem;
+            padding-bottom: 0;
+            padding-top: 3rem;
+        }
+    }
+
+    .secaoContato {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .secaoContato_Content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 5rem;
+
+            .secaoContato_Esquerda {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .titulo {}
+
+                .contatoEmailContainer {
+                    display: flex;
+
+                    align-items: center;
+
+                }
+
+                .contatoTelefoneContainer {
+                    display: flex;
+
+                    align-items: center;
+                }
+
+                .btnContainer{
+                    padding-top: 0.5rem;
+                }
+            }
+
+            .secaoContato_Direita {
+                width: 50%;
+            }
         }
     }
 
 
+}
+
+.icon{
+    padding-right: 0.6rem;
 }
 
 .tituloSecao {

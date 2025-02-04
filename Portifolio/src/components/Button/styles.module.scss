@@ -1,4 +1,4 @@
-.btn{
+.btn {
     text-decoration: none;
     padding: 0.7rem 1.5rem;
     background-color: #1E90FF;
@@ -7,4 +7,18 @@
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
+    box-shadow: rgba(30, 144, 255, 0.54) 0px 3px 8px;
+    transition: 0.3s box-shadow ease;
+
+    &:hover {
+        box-shadow: rgba(30, 144, 255, 0.55) 0px 5px 15px;
+        transition: 0.2s;
+        
+        
+    }
+
+    .icon{
+        text-align: start;
+        padding-right: 0.6rem;
+    }
 }

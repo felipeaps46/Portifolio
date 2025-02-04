@@ -1,39 +1,59 @@
-.main{
+.main {
     display: flex;
-    gap: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
-    align-items: center;
-    padding: 7rem;
+    padding: 2rem;
+    max-width: 100%;
 
 
-    .itemContainer{
+    .itemContainer {
         display: flex;
         flex-direction: column;
-        border: 2px solid #aaa;
-        border-radius: 8px;
-        padding: 1rem 1.5rem;
-        width: 10%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        align-items: center;
+        width: 20%;
+        height: 11rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
 
-        .iconContainer{
-            justify-content: center;
-            text-align: center;
-
-            .icon{
-                font-size: 2rem;
-            }
-
-
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .textContainer{
+        .iconContainer {
+            display: flex;
+            width: 100%;
+            height: 50%;
             justify-content: center;
+            padding: 0;
+            background-position: center;
+            align-items: center;
+            background-size: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
 
-            .titulo{
+            .icon {
+                font-size: 2rem;
+                color: #333;
+            }
+        }
+
+        .textContainer {
+            display: flex;
+
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+
+            .titulo {
+                font-size: 1.2rem;
+                font-weight: 700;
                 text-align: center;
-
             }
         }
 
