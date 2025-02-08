@@ -9,7 +9,7 @@
     .secaoInicial {
         display: flex;
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 9rem;
         height: 50vh;
 
         .secaoInicial_Esquerda {
@@ -65,6 +65,7 @@
                     background-color: white;
                     color: #1E90FF;
                     border: 3px solid #1E90FF;
+                    text-decoration: none;
                     border-radius: 10px;
                     padding: 10px 25px;
                     transition: 0.3s;
@@ -196,41 +197,49 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
 
         .secaoContato_Content {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            justify-content: space-between;
+            /* Distribui os elementos igualmente */
+            align-items: flex-start;
+            /* Alinha os elementos no topo */
+            gap: 2rem;
+            /* Espaçamento entre os blocos */
             width: 100%;
             padding: 5rem;
 
             .secaoContato_Esquerda {
-                width: 50%;
+                width: 45%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                gap: 1rem;
 
-                .titulo {}
-
-                .contatoEmailContainer {
-                    display: flex;
-
-                    align-items: center;
-
+                .titulo {
+                    color: #202020;
                 }
 
-                .contatoTelefoneContainer {
+                .contatoEmailContainer, .contatoTelefoneContainer {
                     display: flex;
-
                     align-items: center;
+                    gap: 0.5rem; /* Espaço entre o ícone e o texto */
                 }
 
-                .btnContainer{
-                    padding-top: 0.5rem;
+                .btnContainer {
+                    padding-top: 1rem;
                 }
             }
 
             .secaoContato_Direita {
-                width: 50%;
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
             }
         }
     }
@@ -238,7 +247,7 @@
 
 }
 
-.icon{
+.icon {
     padding-right: 0.6rem;
 }
 

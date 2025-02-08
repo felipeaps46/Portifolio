@@ -1,16 +1,30 @@
-.main {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem 2rem;
+.mainScrolled{
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 
-    .menuEsquerda {
+.main, .mainScrolled {
+    display: flex;
+    position: fixed;
+    padding: 1rem 0rem;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s box-shadow ease;
+    background: rgba(255, 255, 255, 0.9);
+    align-items: center;
+   
+
+    .leftMenu {
         width: 50%;
         justify-content: flex-start;
         align-items: center;
         display: flex;
         flex-direction: row;
+        padding-left: 10.5rem;
 
-        .icone {
+        .icon {
             width: 42px;
             height: 42px;
             margin-right: 0.5rem;
@@ -30,13 +44,14 @@
 
     }
 
-    .menuDireita {
+    .rightMenu {
         width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         gap: 1.5rem;
+        padding-right: 10.5rem;
 
         .linkText {
             text-decoration: none;

@@ -2,8 +2,10 @@ import styles from "../styles/home.module.scss"
 
 import NavBar from "../components/NavBar"
 import Animation from "../components/Animation"
-import Cards from "../components/Cards"
+import CardsTech from "../components/CardsTech"
 import Button from "../components/Button"
+import CardsProjects from "../components/CardsProjects"
+import Forms from "../components/Forms"
 
 import useDocumentTitle from "../hooks/useDocumentTitle"
 import useFavicon from "../hooks/useFavicon"
@@ -13,9 +15,12 @@ import ImagemPessoal from "../imgs/imagemPessoal.jpeg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 import { HabilidadesData } from "../data/HabilidadesData"
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { ProjetosData } from "../data/ProjetosData"
+
+import curriculum from "../download/CurriculoFelipePereira.pdf"
 
 
 
@@ -34,14 +39,14 @@ export default function Home() {
                         <img src={ImagemPessoal} alt="Imagem pessoal" className={styles.imagemPessoal} />
                     </div>
                     <div className={styles.secaoInicial_Direita}>
-                        <h3 className={styles.subtitulo}>Desenvolvedor</h3>
+                        <h3 className={styles.subtitulo}>Software Engineer</h3>
                         <h2 className={styles.titulo}>Felipe Augusto Pereira</h2>
                         <p className={styles.descricao}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse officiis consequatur id quo omnis laudantium fuga eligendi eos aliquam, in ipsum obcaecati similique tenetur voluptatum ipsa iure ducimus ullam! Tenetur!</p>
                         <div className={styles.secaoInicial_btnsContainer}>
-                            <button className={styles.btnCurriculum}>
+                            <a className={styles.btnCurriculum} href={curriculum} download="Curriculo_Felipe_Pereira.pdf">
                                 <FontAwesomeIcon icon={faDownload} className={styles.iconeDowload} />
                                 <a className={styles.btnText}>Baixar Curriculum</a>
-                            </button>
+                            </a>
                             <button className={styles.btnContato}>
                                 <a className={styles.btnText}>Contato</a>
                             </button>
@@ -69,7 +74,7 @@ export default function Home() {
                         <h2 className={styles.titulo}>Habilidades</h2>
                     </div>
                     <div className={styles.cardsContainer}>
-                        <Cards items={HabilidadesData} />
+                        <CardsTech items={HabilidadesData} />
                     </div>
 
                 </section>
@@ -77,7 +82,11 @@ export default function Home() {
                     <div className={styles.tituloSecao}>
                         <h2 className={styles.titulo}>Portifolio</h2>
                     </div>
+                    <div className={styles.cardsContainer}>
+                        <CardsProjects items={ProjetosData} />
+                    </div>
                 </section>
+
                 <section className={styles.secaoContato}>
                     <div className={styles.tituloSecao}>
                         <h2 className={styles.titulo}>Contato</h2>
@@ -96,11 +105,12 @@ export default function Home() {
                             <div className={styles.btnContainer}>
                                 <Button label="Enviar Mensagem" icon={faWhatsapp} />
                             </div>
-                            </div>
+                        </div>
+                        <div className={styles.secaoContato_Direita}>
+                        <Forms></Forms>
+                        </div>
                     </div>
-                    <div className={styles.secaoContato_Direita}>
 
-                    </div>
                 </section>
             </div>
         </>

@@ -1,0 +1,62 @@
+.contatoContainer {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contatoContent {
+        width: 100%;
+        max-width: 600px;
+
+
+        .contatoCard {
+
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            padding-top: 0;
+
+            .contatoTitle {
+                text-align: center;
+                font-size: 24px;
+                color: black;
+                margin-bottom: 20px;
+                margin-top: 0;
+            }
+
+            .contatoFields {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 1rem;
+
+                .contatoGroup {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: 14px;
+                        color: #555;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        resize: none;
+                        font-family: "Poppins", sans-serif;
+                    }
+                }
+            }
+
+            .btnContainer {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}

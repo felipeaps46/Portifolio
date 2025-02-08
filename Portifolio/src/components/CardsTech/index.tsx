@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss"
-import { CardsType } from "../../types/Cards/CardsType"
+import { CardsType } from "../../types/CardsTech/CardsType"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { colors } from "../../data/Colors"
 
@@ -18,7 +18,7 @@ const Cards: React.FC<CardsType> = ({ items }) => {
                             )}
                         </div>
                         <div className={styles.textContainer}>
-                            <h2 className={styles.titulo}>{item.title}</h2>
+                            <h2 className={styles.title}>{item.title}</h2>
                         </div>
                     </div>
                 ))}
