@@ -1,91 +1,103 @@
 .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 50px 10%;
-    max-width: 1200px;
-    margin: 0 auto; 
+    padding: 3rem 10rem;
+    justify-content: center;
+    padding-bottom: 0;
+}
 
-    .itemContainer {
-        position: relative;
-        width: 350px; 
-        height: 400px;
-        overflow: hidden;
+.itemContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    background: #fff;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.imageContainer {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .gitBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(30, 144, 255, 0.7);
+        border: 2px solid white;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
         cursor: pointer;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        background-color: #fff; 
+        transition: background 0.3s;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
 
         &:hover {
-            transform: translateY(-5px); 
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #1E90FF;
+            color: #1E90FF;
         }
+    }
+}
 
-        .imageContainer {
-            width: 100%;
-            height: 250px; 
-            border-bottom: 1px solid #aaa;
-            overflow: hidden;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
+.infoContainer {
+    padding: 15px;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 0 0 10px 10px;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: transform 0.3s ease-in-out;
-            }
-        }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
 
-        &:hover .imageContainer img {
-            transform: scale(1.1);
-        }
+    .description {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
 
-        .infoContainer {
-            padding: 15px;
-            text-align: center;
-            background-color: #fff;
+    .details {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
 
-            h3 {
-                font-size: 1.2rem;
-                font-weight: bold;
-                color: #333;
-                margin-bottom: 8px;
-            }
+    .projectType {
+        background: #1E90FF;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
 
-            p {
-                font-size: 1rem;
-                color: #666;
-            }
+    .techIcons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
 
-            .infoBtn {
-                margin-top: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-
-                .icon {
-                    font-size: 18px;
-                    color: #007bff;
-                }
-
-                button {
-                    background-color: #007bff;
-                    color: white;
-                    padding: 8px 15px;
-                    border: none;
-                    border-radius: 6px;
-                    cursor: pointer;
-                    transition: background 0.3s ease-in-out;
-
-                    &:hover {
-                        background-color: #0056b3;
-                    }
-                }
-            }
+        .techIcon {
+            width: 30px;
+            height: 30px;
         }
     }
 }
