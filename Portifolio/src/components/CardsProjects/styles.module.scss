@@ -9,11 +9,14 @@
 
 .itemContainer {
     position: relative;
+    display: flex;
     overflow: hidden;
+    flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     background: #fff;
+    min-height: fit-content;
 
     &:hover {
         transform: scale(1.03);
@@ -22,6 +25,7 @@
 
 .imageContainer {
     position: relative;
+    height: 42%;
 
     img {
         width: 100%;
@@ -34,17 +38,17 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background: rgba(30, 144, 255, 0.7);
+        background: rgba(30, 144, 255, 0.5);
         border: 2px solid white;
-        padding: 8px;
+        padding: 0px 8px;
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 5px;
         cursor: pointer;
-        transition: background 0.3s;
+        transition: 0.3s;
         color: white;
         text-decoration: none;
         font-size: 20px;
@@ -53,51 +57,69 @@
             background: rgba(0, 0, 0, 0.8);
             border: 2px solid #1E90FF;
             color: #1E90FF;
+            transition: 0.3s ease;
+            transform: scale(1.1);
         }
     }
 }
 
 .infoContainer {
-    padding: 15px;
+    padding: 20px 2rem 3rem;
+    
     text-align: center;
+   
     background: white;
     color: black;
     border-radius: 0 0 10px 10px;
 
-    .title {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .description {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .details {
-        margin-top: 10px;
+    .divTitle {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        gap: 1rem;
         align-items: center;
-        gap: 8px;
+        justify-content: flex-start;
+
+        .title {
+            font-size: 1.5rem;
+
+        }
+
+        .projectType {
+            color: #1E90FF;
+            font-weight: bolder;
+            padding: 0px 10px;
+            font-size: 1rem;
+            border-left: 2px solid #1E90FF;
+        }
+
     }
 
-    .projectType {
-        background: #1E90FF;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 0.9rem;
+
+    .divDescription {
+        
+        .description {
+            font-size: 1rem;
+            line-height: 1.4;
+            text-align: justify;
+        }
     }
 
     .techIcons {
+        position: absolute;
+        bottom: 0;
         display: flex;
+        flex-direction: row;
         gap: 10px;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        padding-top: 2rem;
 
         .techIcon {
             width: 30px;
             height: 30px;
+            color: #1E90FF;
         }
     }
 }

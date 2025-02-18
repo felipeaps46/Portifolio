@@ -1,8 +1,11 @@
 import emailjs from "emailjs-com";
 import styles from "./styles.module.scss";
 import Button from "../Button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const Contato = () => {
   const handleSubmit = (event) => {
@@ -28,25 +31,31 @@ const Contato = () => {
       );
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <div className={styles.contatoContainer}>
       <section className={styles.contatoContent}>
-        <div className={styles.contatoCard}>
+        <div className={styles.contatoCard} data-aos="fade-left">
           <h2 className={styles.contatoTitle}>Entre em Contato</h2>
           <form onSubmit={handleSubmit}>
             <div className={styles.contatoFields}>
 
-              <div className={styles.contatoGroup}>
+              <div className={styles.contatoGroup} data-aos="fade-up">
                 <label htmlFor="formEmail">Email</label>
                 <input type="email" id="formEmail" name="email" placeholder="Digite seu email" required />
               </div>
 
-              <div className={styles.contatoGroup}>
+              <div className={styles.contatoGroup} data-aos="fade-up">
                 <label htmlFor="formMessage">Mensagem</label>
                 <textarea id="formMessage" name="message" rows="3" placeholder="Digite sua mensagem" required></textarea>
               </div>
             </div>
-            <div className={styles.btnContainer}>
+            <div className={styles.btnContainer} data-aos="zoom-in">
               <Button label="Enviar email" onBtnClick={() => handleSubmit} icon={faEnvelope}>
 
               </Button>

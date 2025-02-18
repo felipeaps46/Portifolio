@@ -75,3 +75,70 @@
         }
     }
 }
+
+
+
+
+
+/* -------------------- */
+/*       RESPONSIVO     */
+/* -------------------- */
+
+@media (max-width: 768px) {
+    .main,
+    .mainScrolled {
+      padding: 1rem 2rem;
+  
+      .leftMenu {
+        width: auto;
+        padding-left: 0;
+        margin-right: auto; 
+      }
+  
+      .rightMenu {
+        width: auto;
+        padding-right: 0;
+        margin-left: auto; 
+        gap: 1rem;
+        .linkText {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main,
+    .mainScrolled {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+  
+      .leftMenu {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center; 
+        margin-bottom: 0.5rem;
+        
+        .nameTitle {
+          font-size: 1.2rem;
+        }
+      }
+  
+      .rightMenu {
+        width: 100%;
+        padding-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+  
+        .linkText {
+          font-size: 0.95rem;
+        }
+  
+        .btnContainer {
+          margin-left: 0;
+        }
+      }
+    }
+  }

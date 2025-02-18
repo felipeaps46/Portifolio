@@ -20,10 +20,6 @@ export const HabilidadesData = [
         icon: faSass
     },
     {
-        title: "C",
-        icon: faC
-    },
-    {
         title: "Java",
         icon: faJava
     },

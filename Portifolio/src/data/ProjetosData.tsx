@@ -34,7 +34,7 @@ export const ProjetosData = [
     {
         title: "Básico Bem Feito",
         image: projeto01,
-        description: "Projeto desenvolvido na disciplina de Trabalho Interdisciplinar do primeiro período do curso, com foco na criação de um sistema para gestão e acompanhamento de treinos. A solução foi projetada para permitir que usuários acompanhem sua evolução na academia e tenham fichas de treino personalizadas de acordo com seus objetivos e necessidades individuais.",
+        description: "Projeto desenvolvido na disciplina de Trabalho Interdisciplinar do primeiro período do curso, com foco na criação de um sistema para gestão e acompanhamento de treinos.",
         link: "",
         type: "Academia",
         technologies: [

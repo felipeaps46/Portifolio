@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const CardsProjects: React.FC<CardsProjectsType> = ({items}) => {
+const CardsProjects: React.FC<CardsProjectsType> = ({ items }) => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const toggleInfo = (index: number) => {
@@ -23,16 +23,21 @@ const CardsProjects: React.FC<CardsProjectsType> = ({items}) => {
                         </a>
                     </div>
                     <div className={styles.infoContainer}>
-                        <h2 className={styles.title}>{item.title}</h2>
-                        <p className={styles.description}>{item.description}</p>
-                        <div className={styles.details}>
+                        <div className={styles.divTitle}>
+                            <h2 className={styles.title}>{item.title}</h2>
                             <span className={styles.projectType}>{item.type}</span>
-                            <div className={styles.techIcons}>
-                                {item.technologies.map((tech, i) => (
-                                    <FontAwesomeIcon key={i} icon={tech} className={styles.techIcon} />
-                                ))}
-                            </div>
                         </div>
+                        <div className={styles.divDescription}>
+                            <p className={styles.description}>{item.description}</p>
+                        </div>
+
+                        <div className={styles.techIcons}>
+                            <h3>Tecnologias: </h3>
+                            {item.technologies.map((tech, i) => (
+                                <FontAwesomeIcon key={i} icon={tech} className={styles.techIcon} />
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             ))}

@@ -7,7 +7,7 @@ const Animation = ({animationUrl}) => {
     if (loading) return <p>Carregando animação...</p>;
     if (!animationData) return <p>Erro ao carregar a animação.</p>;
 
-    return <Lottie animationData={animationData} loop autoplay style={{ maxWidth: "100%" }} />;
+    return <Lottie animationData={animationData} loop autoplay style={{ maxWidth: "100%", overflow: "hidden" }} />;
 }
 
 export default Animation

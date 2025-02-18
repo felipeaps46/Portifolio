@@ -1,62 +1,120 @@
 .main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    padding: 2rem;
-    max-width: 100%;
-
-
+    display: flex;             /* Layout em flex */
+    flex-wrap: wrap;           /* Permite quebra de linha */
+    gap: 1.5rem;               /* Espaçamento entre os cards */
+    justify-content: center;   /* Centraliza os cards */
+    max-width: 1200px;         /* Largura máxima do container */
+    margin: 0 auto;            /* Centraliza horizontalmente na tela */
+    padding: 2rem;             /* Espaçamento interno */
+  
     .itemContainer {
+      /* Ajuste de dimensões para o card */
+      width: 220px;            /* Largura fixa (ajuste conforme necessário) */
+      background-color: #fff;  /* Fundo branco para destacar */
+      border-radius: 10px;     
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      /* Efeito hover */
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      }
+  
+      /* Seção do ícone */
+      .iconContainer {
+        /* Você pode usar a cor vinda de props ou JS inline */
+        background-color: #f5f5f5;  
+        padding: 2rem;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 20%;
-        height: 11rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-        cursor: pointer;
-
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        justify-content: center;
+  
+        .icon {
+          font-size: 2rem;
+          color: #333;
         }
-
-        .iconContainer {
-            display: flex;
-            width: 100%;
-            height: 50%;
-            justify-content: center;
-            padding: 0;
-            background-position: center;
-            align-items: center;
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-
-            .icon {
-                font-size: 2rem;
-                color: #333;
-            }
+      }
+  
+      /* Seção do texto */
+      .textContainer {
+        padding: 1rem;
+  
+        .title {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin: 0;
+          color: #333;
         }
-
-        .textContainer {
-            display: flex;
-
-            width: 100%;
-            height: 50%;
-            justify-content: center;
-            align-items: center;
-
-            .title{
-                font-size: 1.2rem;
-                font-weight: 700;
-                text-align: center;
-            }
-        }
-
-
+      }
     }
-}
+  }
+
+
+/* ------------------------- */
+/*       RESPONSIVIDADE      */
+/* ------------------------- */
+
+@media (max-width: 992px) {
+    .main {
+      padding: 2rem 1rem;
+    }
+  
+    .itemContainer {
+      width: 25%;
+      height: 10rem;
+  
+      .iconContainer .icon {
+        font-size: 2.2rem;
+      }
+  
+      .textContainer .title {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 1.5rem 1rem;
+    }
+  
+    .itemContainer {
+      width: 33.3%;
+      height: 9.5rem;
+  
+      .iconContainer .icon {
+        font-size: 2rem;
+      }
+  
+      .textContainer .title {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      padding: 1rem 0.5rem;
+    }
+  
+    .itemContainer {
+      width: 80%; 
+      height: auto; 
+  
+      .iconContainer {
+        .icon {
+          font-size: 1.8rem;
+        }
+      }
+  
+      .textContainer {
+        .title {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
