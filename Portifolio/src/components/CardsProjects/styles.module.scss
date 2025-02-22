@@ -1,125 +1,147 @@
+
 .main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 3rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 5rem;
     justify-content: center;
-    padding-bottom: 0;
 }
 
-.itemContainer {
+.card {
+    flex: 1 1 280px;
     position: relative;
-    display: flex;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    background: #fff;
-    min-height: fit-content;
 
     &:hover {
-        transform: scale(1.03);
+        transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     }
 }
 
-.imageContainer {
+.image {
     position: relative;
-    height: 42%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px 10px 0 0;
+.gitBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 7px;
+    border: 2px solid #1E90FF;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    svg {
+        color: #1E90FF;
+        font-size: 1.5rem;
     }
 
-    .gitBtn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: rgba(30, 144, 255, 0.5);
-        border: 2px solid white;
-        padding: 0px 8px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
+    &:hover {
+        background: #1E90FF;
+        transition: 0.4s ease;
 
-        &:hover {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid #1E90FF;
-            color: #1E90FF;
-            transition: 0.3s ease;
-            transform: scale(1.1);
+        svg {
+            color: #fff;
         }
     }
 }
 
-.infoContainer {
-    padding: 20px 2rem 3rem;
-    
-    text-align: center;
-   
-    background: white;
-    color: black;
-    border-radius: 0 0 10px 10px;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+    padding: 10px;
+    color: #fff;
 
-    .divTitle {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 1rem;
-        align-items: center;
-        justify-content: flex-start;
-
-        .title {
-            font-size: 1.5rem;
-
-        }
-
-        .projectType {
-            color: #1E90FF;
-            font-weight: bolder;
-            padding: 0px 10px;
-            font-size: 1rem;
-            border-left: 2px solid #1E90FF;
-        }
-
+    .title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 0.5rem;
     }
 
+    .projectType {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        padding-left: 0.5rem;
+    }
+}
 
-    .divDescription {
-        
-        .description {
-            font-size: 1rem;
-            line-height: 1.4;
-            text-align: justify;
-        }
+.content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-grow: 1;
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        text-align: justify;
     }
 
     .techIcons {
-        position: absolute;
-        bottom: 0;
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        justify-content: flex-start;
-        margin-top: 2rem;
-        padding-top: 2rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
 
         .techIcon {
-            width: 30px;
-            height: 30px;
+            font-size: 2rem;
             color: #1E90FF;
+            transition: transform 0.2s ease;
+            transition: 0.3s ease;
+    
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.3s ease;
+                color: #FFD700;
+            }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .image {
+        height: 150px;
+    }
+
+    .overlay .title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 1rem;
+    }
+
+    .content .description {
+        font-size: 0.9rem;
     }
 }

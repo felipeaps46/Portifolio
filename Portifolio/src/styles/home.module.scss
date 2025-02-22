@@ -9,7 +9,6 @@
 
 .main {
     width: 100%;
-  
     padding: 0 5rem;
 
     .secaoInicial {
@@ -211,11 +210,8 @@
             flex-wrap: wrap;
             max-width: 1200px;
             justify-content: space-between;
-            /* Distribui os elementos igualmente */
             align-items: flex-start;
-            /* Alinha os elementos no topo */
             gap: 2rem;
-            /* Espaçamento entre os blocos */
             width: 100%;
             padding: 5rem;
 
@@ -228,6 +224,7 @@
 
                 .titulo {
                     color: #202020;
+                    margin: 0;
                 }
 
                 .contatoEmailContainer,
@@ -235,7 +232,7 @@
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    /* Espaço entre o ícone e o texto */
+
                 }
 
                 .btnContainer {
@@ -248,6 +245,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+                
             }
         }
     }
@@ -279,13 +277,145 @@
 
 
 
+@media only screen and (max-width: 1440px){
+    .secaoSobre {
+        .secaoSobre_Content {
+            padding: 0rem 2rem;
+            gap: 3rem;
+
+            .secaoSobre_Esquerda {
+                width: 50%;
+                padding: 5rem 0rem 5rem 0 !important;
+            }
+
+            .secaoSobre_Direita {
+                width: 50%;
+                padding: 0;
+            }
+        }
+    } 
+}
+
+/* Responsividade para telas maiores que 768px (desktops maiores) */
+@media only screen and (max-width: 1024px) {
+
+    .main {
+        padding: 0 3rem;
+
+        .secaoInicial {
+            margin-top: 10rem;
+            height: 60vh;
+            flex-direction: column;
+            height: auto;
+
+            .secaoInicial_Esquerda {
+                width: 100%;
+                justify-content: center;
+                padding: 0;
+                text-align: center;
+
+
+                .imagemPessoal {
+                    width: 70%;
+                }
+            }
+
+            .secaoInicial_Direita {
+                width: 100%;
+                padding-bottom: 3rem;
+                padding-top: 3rem;
+                padding-right: 0;
+                text-align: center;
+
+                .subtitulo {
+                    font-size: 1.8rem;
+                }
+
+                .titulo {
+                    font-size: 4.5rem;
+                }
+
+                .descricao {
+                    font-size: 1.2rem;
+                    padding-right: 0;
+                }
+
+                .secaoInicial_btnsContainer {
+                    gap: 1.5rem;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .secaoSobre {
+            .secaoSobre_Content {
+                padding: 0rem 2rem;
+                gap: 3rem;
+
+                .secaoSobre_Esquerda {
+                    width: 50%;
+                    padding: 5rem 0rem 5rem 0;
+                }
+
+                .secaoSobre_Direita {
+                    width: 50%;
+                    padding: 0;
+                }
+            }
+        }
+
+        .secaoHabilidades {
+            .cardsContainer {
+
+                gap: 2rem;
+                padding: 5rem 7rem;
+            }
+        }
+
+        .secaoContato {
+            .secaoContato_Content {
+                flex-direction: row;
+
+                gap: 4rem;
+
+                .secaoContato_Esquerda,
+                .secaoContato_Direita {
+                    width: 45%;
+                }
+
+                .secaoContato_Esquerda {
+                    .titulo {
+                        font-size: 2.5rem;
+                        margin: 0;
+                    }
+
+                    .contatoEmailContainer,
+                    .contatoTelefoneContainer {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .tituloSecao {
+        font-size: 2rem;
+        margin-top: 5%;
+
+        .titulo {
+            font-size: 2.5rem;
+        }
+    }
+}
 
 
 
 
 
 
-/* responsividade.scss */
+
+
+
 
 /* Ajustes para telas até 768px (tablets e pequenos desktops) */
 @media only screen and (max-width: 768px) {
@@ -364,16 +494,30 @@
 
         .secaoContato {
             margin-top: 6rem;
+
             .secaoContato_Content {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
                 padding: 3rem 1rem;
                 gap: 2rem;
 
-                .secaoContato_Esquerda,
-                .secaoContato_Direita {
-                    width: 100%;
+
+                .secaoContato_Esquerda {
+                    width: 50%;
                     padding: 0;
+                    text-align: center;
+
+                }
+
+                .secaoContato_Esquerda {
+                    width: 50%;
+                    padding: 0;
+                    text-align: center;
+
+                    .contatoEmailContainer,
+                    .contatoTelefoneContainer {
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -387,6 +531,12 @@
         }
     }
 }
+
+
+
+
+
+
 
 /* Ajustes para telas até 480px (celulares) */
 @media only screen and (max-width: 480px) {
@@ -452,7 +602,17 @@
         .secaoContato {
             .secaoContato_Content {
                 padding: 2rem 1rem;
-                gap: 1rem;
+                gap: 5rem;
+
+                .secaoContato_Esquerda {
+                    display: flex;
+                    text-align: center;
+
+                    .contatoEmailContainer,
+                    .contatoTelefoneContainer {
+                        justify-content: center;
+                    }
+                }
             }
         }
     }

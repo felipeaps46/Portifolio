@@ -1,82 +1,82 @@
-.mainScrolled{
-    
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.mainScrolled {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.main, .mainScrolled {
+.main,
+.mainScrolled {
+  display: flex;
+  position: fixed;
+  padding: 1rem 0rem;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s box-shadow ease;
+  background: rgba(255, 255, 255, 0.9);
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .leftMenu {
     display: flex;
-    position: fixed;
-    padding: 1rem 0rem;
-    z-index: 999;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.3s box-shadow ease;
-    background: rgba(255, 255, 255, 0.9);
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: flex-start;
     align-items: center;
-   
+    padding-left: 10.5rem;
+    gap: 0.5rem;
 
-    .leftMenu {
-        width: 50%;
-        justify-content: flex-start;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        padding-left: 10.5rem;
-
-        .icon {
-            width: 42px;
-            height: 42px;
-            margin-right: 0.5rem;
-            background-color: #1E90FF;
-            border-radius: 50%;
-            text-align: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-        }
-
-        .nameTitle {
-            font-weight: lighter;
-            font-size: 1.5rem;
-        }
-
-
+    .icon {
+      width: 42px;
+      height: 42px;
+      margin-right: 0.5rem;
+      background-color: #1E90FF;
+      border-radius: 50%;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8rem;
+      flex-shrink: 0;
     }
 
-    .rightMenu {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 1.5rem;
-        padding-right: 10.5rem;
-
-        .linkText {
-            text-decoration: none;
-            color: grey;
-            font-size: 1.2rem;
-            transition: 0.3s ease;
-            font-weight: 500;
-
-            &:hover {
-                color: #1E90FF;
-                transition: 0.3s;
-
-            }
-
-        }
-
-        .btnContainer {
-            align-items: center;
-            justify-content: center;
-            margin-left: 3rem;
-        }
+    .nameTitle {
+      font-weight: lighter;
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+  }
+
+  .rightMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding-right: 10.5rem;
+
+    .linkText {
+      text-decoration: none;
+      color: grey;
+      font-size: 1.2rem;
+      transition: 0.3s ease;
+      font-weight: 500;
+      white-space: nowrap;
+
+      &:hover {
+        color: #1E90FF;
+        transition: 0.3s;
+      }
+    }
+
+    .btnContainer {
+      align-items: center;
+      justify-content: center;
+      margin-left: 3rem;
+    }
+  }
 }
-
-
 
 
 
@@ -84,61 +84,111 @@
 /*       RESPONSIVO     */
 /* -------------------- */
 
-@media (max-width: 768px) {
-    .main,
-    .mainScrolled {
-      padding: 1rem 2rem;
-  
-      .leftMenu {
-        width: auto;
-        padding-left: 0;
-        margin-right: auto; 
-      }
-  
-      .rightMenu {
-        width: auto;
-        padding-right: 0;
-        margin-left: auto; 
-        gap: 1rem;
-        .linkText {
-          font-size: 1rem;
-        }
-      }
+@media (min-width: 1025px) and (max-width: 1280px) {
+ 
+    .leftMenu {
+      padding-left: 5rem !important;  
     }
-  }
+
+    .rightMenu {
+      padding-right: 5rem !important; 
+    }
+
+    .rightMenu .linkText {
+      font-size: 1.1rem;
+    }
   
-  @media (max-width: 480px) {
-    .main,
-    .mainScrolled {
-      flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+
+  .main,
+  .mainScrolled {
+    padding: 1rem 2rem;
+
+    .leftMenu {
+      width: 100%;
+      padding-left: 0;
+      gap: 0.5rem;
       justify-content: center;
-      padding: 0.5rem 1rem;
-  
-      .leftMenu {
-        width: 100%;
-        padding-left: 0;
-        justify-content: center; 
-        margin-bottom: 0.5rem;
-        
-        .nameTitle {
-          font-size: 1.2rem;
-        }
+    }
+
+    .rightMenu {
+      width: 100%;
+      padding-right: 0;
+      justify-content: center;
+
+      .linkText {
+        font-size: 1.1rem;
       }
-  
-      .rightMenu {
-        width: 100%;
-        padding-right: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-  
-        .linkText {
-          font-size: 0.95rem;
-        }
-  
-        .btnContainer {
-          margin-left: 0;
-        }
+
+      .btnContainer {
+        margin: 0;
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+
+  .main,
+  .mainScrolled {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    .leftMenu {
+      width: 100%;
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 0.5rem;
+
+      .nameTitle {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+    }
+
+    .rightMenu {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .linkText {
+        font-size: 1rem;
+      }
+
+      .btnContainer {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .main,
+  .mainScrolled {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+
+    .leftMenu {
+      justify-content: center;
+
+      .nameTitle {
+        font-size: 1.1rem;
+      }
+    }
+
+    .rightMenu {
+      justify-content: center;
+      gap: 0.8rem;
+
+      .linkText {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

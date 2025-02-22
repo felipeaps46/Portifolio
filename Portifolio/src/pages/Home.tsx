@@ -25,7 +25,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import { HabilidadesData } from "../data/HabilidadesData"
 import { ProjetosData } from "../data/ProjetosData"
 
-import curriculum from "../download/CurriculoFelipePereira.pdf"
+import curriculum from "../download/Currículo.pdf"
 
 
 
