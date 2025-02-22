@@ -1,5 +1,5 @@
 import { faReact, faJava, faJs, faBootstrap } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faLeaf, faWind } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import projeto01 from "../imgs/projeto01.png";
 import projeto02 from "../imgs/projeto02.png";
 import projeto03 from "../imgs/projeto03.png";
@@ -18,6 +18,7 @@ export const ProjetosData = [
             faLeaf,
             faBootstrap
         ]
+
     },
     {
         title: "Voogle",

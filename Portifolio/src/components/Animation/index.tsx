@@ -1,8 +1,9 @@
 import Lottie from "lottie-react";
 import useAnimation from "../../hooks/useAnimation"
+import { AnimationType } from "../../types/AnimationType";
 
-const Animation = ({animationUrl}) => {
-    const { animationData, loading } = useAnimation(animationUrl);
+const Animation:React.FC <AnimationType> = ({url}) => {
+    const { animationData, loading } = useAnimation(url);
 
     if (loading) return <p>Carregando animação...</p>;
     if (!animationData) return <p>Erro ao carregar a animação.</p>;

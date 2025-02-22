@@ -1,30 +1,46 @@
 import { faReact, faJs, faGithub, faJava, faSass } from "@fortawesome/free-brands-svg-icons";
-import { faC } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons"; 
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+
 
 export const HabilidadesData = [
     {
         title: "React",
-        icon: faReact
+        icon: faReact,
+        color: "rgba(97, 219, 251, 0.7)"
     },
     {
         title: "JavaScript",
-        icon: faJs
+        icon: faJs,
+        color: "rgba(247, 223, 30, 0.7)"
+        
+        
     },
     {
         title: "TypeScript",
-        icon: faCode
+        icon: faCode,
+        color: "rgba(0, 122, 204, 0.7)"
+        
+       
     },
     {
         title: "SCSS",
-        icon: faSass
+        icon: faSass,
+        color: "rgba(204, 102, 153, 0.7)"
+        
+       
     },
     {
         title: "Java",
-        icon: faJava
+        icon: faJava,
+        color: "rgba(176, 114, 25, 0.7)"
+        
+       
     },
     {
         title: "Git / Github",
-        icon: faGithub
+        icon: faGithub,
+        color: "rgba(51, 51, 51, 0.7)"
+        
+       
     }
 ];

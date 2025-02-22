@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
 const Contato = () => {
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; target: any; }) => {
     event.preventDefault();
     const form = event.target;
 
@@ -52,7 +52,7 @@ const Contato = () => {
 
               <div className={styles.contatoGroup} data-aos="fade-up">
                 <label htmlFor="formMessage">Mensagem</label>
-                <textarea id="formMessage" name="message" rows="3" placeholder="Digite sua mensagem" required></textarea>
+                <textarea id="formMessage" name="message" placeholder="Digite sua mensagem" required></textarea>
               </div>
             </div>
             <div className={styles.btnContainer} data-aos="zoom-in">

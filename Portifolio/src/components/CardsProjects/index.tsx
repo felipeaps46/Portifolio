@@ -1,20 +1,11 @@
 import styles from "./styles.module.scss"
 import { CardsProjectsType } from "../../types/CardsProjects/CardsProjectsType"
-import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo } from "@fortawesome/free-solid-svg-icons";
+
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const CardsProjects: React.FC<CardsProjectsType> = ({ items }) => {
-
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-    const toggleInfo = (index: number) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
 
     return (
         <div className={styles.main}>

@@ -1,12 +1,13 @@
 import styles from "../styles/home.module.scss"
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, MutableRefObject } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import React from "react";
 
 
 import NavBar from "../components/NavBar"
-import Animation from "../components/Animation"
+import Animation from "../components/Animation/index"
 import CardsTech from "../components/CardsTech"
 import Button from "../components/Button"
 import CardsProjects from "../components/CardsProjects"
@@ -46,15 +47,15 @@ export default function Home() {
     const trabalhosRef = useRef(null);
     const contatoRef = useRef(null)
 
-    const scrollToSection = (ref) => {
+    const scrollToSection = (ref: React.RefObject<HTMLDivElement>): void => {
         if (ref.current) {
-            const offset = 80;
-            const topPosition = ref.current.offsetTop - offset;
-    
-            window.scrollTo({
-                top: topPosition,
-                behavior: "smooth"
-            });
+          const offset = 80;
+          const topPosition = ref.current.offsetTop - offset;
+      
+          window.scrollTo({
+            top: topPosition,
+            behavior: "smooth",
+          });
         }
       };
 
@@ -94,7 +95,7 @@ export default function Home() {
                 <p>Minha jornada acadêmica e profissional é impulsionada por desafios, colaboração em equipe e pela busca por resultados impactantes. Estou motivado a contribuir para projetos que unam criatividade e tecnologia, transformando ideias em soluções reais.</p>
             </div>
             <div className={styles.secaoSobre_Direita} data-aos="fade-left">
-                <Animation animationUrl={"https://assets9.lottiefiles.com/packages/lf20_m9lwcxrc.json"} />
+                <Animation url={"https://assets9.lottiefiles.com/packages/lf20_m9lwcxrc.json"} />
             </div>
         </div>
     </section>
