@@ -11,7 +11,7 @@ import Animation from "../components/Animation/index"
 import CardsTech from "../components/CardsTech"
 import Button from "../components/Button"
 import CardsProjects from "../components/CardsProjects"
-import Forms from "../components/Forms"
+
 
 import useDocumentTitle from "../hooks/useDocumentTitle"
 import useFavicon from "../hooks/useFavicon"
