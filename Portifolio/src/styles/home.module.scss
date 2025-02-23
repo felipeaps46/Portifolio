@@ -25,7 +25,9 @@
 
             .imagemPessoal {
                 width: 70%;
+                height: auto;
                 border-radius: 8px;
+                object-fit: cover;
 
             }
         }
@@ -198,6 +200,16 @@
         }
     }
 
+    .secaoPortifolio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .cardsContainer{
+            padding-top: 5rem;
+        }
+    }
+
     .secaoContato {
         display: flex;
         flex-direction: column;
@@ -284,7 +296,40 @@
 
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .secaoInicial{
+        .secaoInicial_Esquerda{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 3rem !important;
+
+            .imagemPessoal{
+                width: 350px !important;
+                height: 350px;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        .secaoInicial_Direita{
+            padding-right: 5rem !important;
+            .subtitulo {
+                font-size: clamp(0.5rem, 2.5vw, 1rem);
+              }
+              
+              .titulo {
+                font-size: 2.5rem !important;
+                white-space: nowrap;
+              }
+              
+              .descricao {
+                font-size: 1rem;
+                padding-right: 0 !important;
+              }
+        }
+    }
+
     .secaoSobre {
         .secaoSobre_Content {
             padding: 0rem 2rem;
@@ -297,7 +342,7 @@
 
             .secaoSobre_Direita {
                 width: 50%;
-                padding: 0;
+                padding: 0 !important;
             }
         }
     }
@@ -357,16 +402,19 @@
         .secaoSobre {
             .secaoSobre_Content {
                 padding: 0rem 2rem;
-                gap: 3rem;
+                gap: 0rem;
+                flex-direction: column;
 
                 .secaoSobre_Esquerda {
-                    width: 50%;
-                    padding: 5rem 0rem 5rem 0;
+                    width: 100%;
+                    padding: 0rem 0rem 0rem 0;
+                    text-align: justify;
                 }
 
                 .secaoSobre_Direita {
-                    width: 50%;
+                    width: 70%;
                     padding: 0;
+
                 }
             }
         }
@@ -378,6 +426,8 @@
                 padding: 5rem 7rem;
             }
         }
+
+    
 
         .secaoContato {
             .secaoContato_Content {
@@ -504,8 +554,14 @@
             }
         }
 
+        .secaoPortifolio{
+            .cardsContainer{
+                padding-top: 3rem;
+            }
+        }
+
         .secaoContato {
-            margin-top: 6rem;
+            margin-top: 1rem;
 
             .secaoContato_Content {
                 flex-direction: row;
@@ -533,7 +589,7 @@
         margin-top: 5%;
 
         .titulo {
-            font-size: 1.9rem;
+            font-size: 2.5rem;
         }
     }
 }
@@ -607,6 +663,7 @@
 
         .secaoContato {
             width: 100%;
+            margin-top: 1rem;
 
             .secaoContato_Content {
                 width: 100%;

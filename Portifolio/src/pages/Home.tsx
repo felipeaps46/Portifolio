@@ -15,6 +15,7 @@ import CardsProjects from "../components/CardsProjects"
 
 import useDocumentTitle from "../hooks/useDocumentTitle"
 import useFavicon from "../hooks/useFavicon"
+import useIsMobile from "../hooks/useIsMobile";
 
 import Icone from "../imgs/icone.png"
 import ImagemPessoal from "../imgs/imagemPessoal.jpeg"
@@ -34,6 +35,8 @@ export default function Home() {
 
     useDocumentTitle("Felipe Pereira - Portifolio")
     useFavicon(Icone)
+
+    const isMobile = useIsMobile();
 
     useEffect(() => {
         AOS.init({
@@ -62,13 +65,13 @@ export default function Home() {
     return (
         <>
             <div className={styles.main}>
-    <NavBar scrollToSection={scrollToSection} refs={{ homeRef, sobreRef, habilidadesRef, trabalhosRef, contatoRef }} data-aos="fade-down"></NavBar>
+    <NavBar scrollToSection={scrollToSection} refs={{ homeRef, sobreRef, habilidadesRef, trabalhosRef, contatoRef }} data-aos={isMobile ? "fade-up" : "fade-down"}></NavBar>
 
     <section className={styles.secaoInicial} ref={homeRef} data-aos="fade-up">
-        <div className={styles.secaoInicial_Esquerda} data-aos="fade-right">
+        <div className={styles.secaoInicial_Esquerda} data-aos={isMobile ? "fade-up" : "fade-right"}>
             <img src={ImagemPessoal} alt="Imagem pessoal" className={styles.imagemPessoal} />
         </div>
-        <div className={styles.secaoInicial_Direita} data-aos="fade-left">
+        <div className={styles.secaoInicial_Direita} data-aos={isMobile ? "fade-up" : "fade-left"}>
             <h3 className={styles.subtitulo} data-aos="zoom-in">Software Engineer</h3>
             <h2 className={styles.titulo} data-aos="zoom-in">Felipe Augusto Pereira</h2>
             <p className={styles.descricao} data-aos="fade-up">Meu nome é Felipe, sou estudante do curso de Engenharia de Software na Puc Minas. Tenho grande interesse por tecnologia e sou um entusiasta da programação, sempre buscando aprender mais e me aprofundar nessa área.</p>
@@ -85,23 +88,23 @@ export default function Home() {
     </section>
 
     <section className={styles.secaoSobre} ref={sobreRef} data-aos="fade-up">
-        <div className={styles.tituloSecao} data-aos="fade-right">
+        <div className={styles.tituloSecao} data-aos={isMobile ? "fade-up" : "fade-right"}>
             <h2 className={styles.titulo}>Sobre Mim</h2>
         </div>
         <div className={styles.secaoSobre_Content}>
-            <div className={styles.secaoSobre_Esquerda} data-aos="fade-right">
+            <div className={styles.secaoSobre_Esquerda} data-aos={isMobile ? "fade-up" : "fade-right"}>
                 <p>Meu nome é Felipe Sousa, estou cursando o terceiro período de Engenharia de Software na PUC Minas, onde estou desenvolvendo uma base sólida em programação e tecnologias inovadoras.</p>
                 <p>Tenho experiência com linguagens como Java, JavaScript e Sass, e frameworks como React, além de estar constantemente aprimorando minhas habilidades em desenvolvimento de sistemas e automação.</p>
                 <p>Minha jornada acadêmica e profissional é impulsionada por desafios, colaboração em equipe e pela busca por resultados impactantes. Estou motivado a contribuir para projetos que unam criatividade e tecnologia, transformando ideias em soluções reais.</p>
             </div>
-            <div className={styles.secaoSobre_Direita} data-aos="fade-left">
+            <div className={styles.secaoSobre_Direita} data-aos={isMobile ? "fade-up" : "fade-left"}>
                 <Animation url={"https://assets9.lottiefiles.com/packages/lf20_m9lwcxrc.json"} />
             </div>
         </div>
     </section>
 
     <section className={styles.secaoHabilidades} ref={habilidadesRef} data-aos="fade-up">
-        <div className={styles.tituloSecao} style={{ marginTop: "4rem" }} data-aos="fade-right">
+        <div className={styles.tituloSecao} style={{ marginTop: "4rem" }} data-aos={isMobile ? "fade-up" : "fade-right"}>
             <h2 className={styles.titulo}>Habilidades</h2>
         </div>
         <div className={styles.cardsContainer} data-aos="zoom-in">
@@ -110,7 +113,7 @@ export default function Home() {
     </section>
 
     <section className={styles.secaoPortifolio} ref={trabalhosRef} data-aos="fade-up">
-        <div className={styles.tituloSecao} data-aos="fade-right">
+        <div className={styles.tituloSecao} data-aos={isMobile ? "fade-up" : "fade-right"}>
             <h2 className={styles.titulo}>Portifolio</h2>
         </div>
         <div className={styles.cardsContainer} data-aos="zoom-in">
@@ -119,11 +122,11 @@ export default function Home() {
     </section>
 
     <section className={styles.secaoContato} ref={contatoRef} data-aos="fade-up">
-        <div className={styles.tituloSecao} data-aos="fade-right">
+        <div className={styles.tituloSecao} data-aos={isMobile ? "fade-up" : "fade-right"}>
             <h2 className={styles.titulo}>Contato</h2>
         </div>
         <div className={styles.secaoContato_Content}>
-            <div className={styles.secaoContato_Esquerda} data-aos="fade-right">
+            <div className={styles.secaoContato_Esquerda} data-aos={isMobile ? "fade-up" : "fade-right"}>
         
                 <div className={styles.contatoEmailContainer} data-aos="fade-up">
                     <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
