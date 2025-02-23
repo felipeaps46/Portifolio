@@ -16,3 +16,4 @@ const useScrolled = () => {
 };
 
 export default useScrolled;
+

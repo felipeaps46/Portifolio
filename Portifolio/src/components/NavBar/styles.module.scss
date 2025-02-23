@@ -176,6 +176,18 @@
 
     .leftMenu {
       justify-content: center;
+      margin: 0;
+      gap: 0.1rem;
+
+      .icon{
+        width: 22px;
+        height: 22px;
+        font-size: 0.95rem;
+      }
+
+      .nameTitle{
+        font-family: 1rem;
+      }
 
       .nameTitle {
         font-size: 1.1rem;
@@ -189,6 +201,7 @@
       .linkText {
         font-size: 0.95rem;
       }
+
     }
   }
 }

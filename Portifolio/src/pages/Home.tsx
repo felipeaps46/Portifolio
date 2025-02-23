@@ -124,7 +124,7 @@ export default function Home() {
         </div>
         <div className={styles.secaoContato_Content}>
             <div className={styles.secaoContato_Esquerda} data-aos="fade-right">
-                <h2 className={styles.titulo}>Felipe Pereira</h2>
+        
                 <div className={styles.contatoEmailContainer} data-aos="fade-up">
                     <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
                     <p>Email: felipeaps0918@gmail.com</p>
@@ -137,12 +137,15 @@ export default function Home() {
                     <Button label="Enviar Mensagem" icon={faWhatsapp} />
                 </div>
             </div>
+            {/*
             <div className={styles.secaoContato_Direita} data-aos="fade-left">
                 <Forms></Forms>
-            </div>
+            </div>*/}
         </div>
     </section>
 </div>
         </>
     )
 }
+
+
