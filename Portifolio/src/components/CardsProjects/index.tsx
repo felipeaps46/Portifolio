@@ -3,6 +3,7 @@ import { CardsProjectsType } from "../../types/CardsProjects/CardsProjectsType"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { IconType } from "react-icons";
 
 
 const CardsProjects: React.FC<CardsProjectsType> = ({ items }) => {
@@ -24,9 +25,20 @@ const CardsProjects: React.FC<CardsProjectsType> = ({ items }) => {
                     <div className={styles.content}>
                         <p className={styles.description}>{item.description}</p>
                         <div className={styles.techIcons}>
-                            {item.technologies.map((tech, i) => (
-                                <FontAwesomeIcon key={i} icon={tech} className={styles.techIcon} />
-                            ))}
+                            {item.technologies.map((tech, i) => {
+                                if ("prefix" in tech) {
+                                    return (
+                                        <FontAwesomeIcon
+                                            key={i}
+                                            icon={tech}
+                                            className={styles.techIcon}
+                                        />
+                                    );
+                                } else {
+                                    const IconComponent = tech as IconType;
+                                    return <IconComponent key={i} className={styles.techIcon} />;
+                                }
+                            })}
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
+import { IconType } from "react-icons"
 
 export interface CardsItemProjectsType{
     image: string
@@ -6,5 +7,5 @@ export interface CardsItemProjectsType{
     description: string
     link: string
     type: string
-    technologies: Array<IconDefinition>
+    technologies: (IconDefinition | IconType)[]
 }

@@ -1,5 +1,5 @@
 import { faReact, faJs, faGithub, faJava, faSass } from "@fortawesome/free-brands-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { SiTypescript } from "react-icons/si";
 
 
 export const HabilidadesData = [
@@ -17,7 +17,7 @@ export const HabilidadesData = [
     },
     {
         title: "TypeScript",
-        icon: faCode,
+        icon: SiTypescript,
         color: "rgba(0, 122, 204, 0.7)"
         
        

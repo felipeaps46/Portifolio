@@ -48,10 +48,12 @@
       &:hover {
           background-color: #FFD700;
 
-          .icon {
-              animation: pulse 3s infinite;
-    
-          }
+      }
+
+      .techIcon{
+        font-size: 2.2rem;
+        color: #fff;
+        transition: transform 0.3s ease;
       }
   }
 
@@ -72,21 +74,6 @@
   }
 }
 
-@keyframes pulse {
-  0%{
-    transform: scale(1);
-  }
-  50%{
-    transform: scale(1.15);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-
-/* ------------------------- */
-/*       RESPONSIVIDADE      */
-/* ------------------------- */
 
 @media (max-width: 992px) {
   .main {
@@ -103,6 +90,10 @@
 
           .icon {
               font-size: 2.2rem;
+          }
+
+          .techIcon{
+            font-size: 1.9rem;
           }
       }
 
@@ -128,6 +119,10 @@
           .icon {
               font-size: 2rem;
           }
+
+          .techIcon{
+            font-size: 1.7rem;
+          }
       }
 
       .textContainer .title {
@@ -151,6 +146,10 @@
 
           .icon {
               font-size: 1.8rem;
+          }
+
+          .techIcon{
+            font-size: 1.5rem;
           }
       }
 

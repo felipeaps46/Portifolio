@@ -348,7 +348,7 @@
     }
 }
 
-/* Responsividade para telas maiores que 768px (desktops maiores) */
+
 @media only screen and (max-width: 1024px) {
 
     .main {
@@ -473,7 +473,7 @@
 
 
 
-/* Ajustes para telas até 768px (tablets e pequenos desktops) */
+
 @media only screen and (max-width: 768px) {
     .main {
         padding: 0 2rem;
@@ -562,6 +562,7 @@
 
         .secaoContato {
             margin-top: 1rem;
+            margin-bottom: 3rem;
 
             .secaoContato_Content {
                 flex-direction: row;
@@ -600,7 +601,7 @@
 
 
 
-/* Ajustes para telas até 480px (celulares) */
+
 @media only screen and (max-width: 480px) {
     .main {
         padding: 0 1rem;
@@ -664,6 +665,7 @@
         .secaoContato {
             width: 100%;
             margin-top: 1rem;
+            margin-bottom: 3rem;
 
             .secaoContato_Content {
                 width: 100%;
