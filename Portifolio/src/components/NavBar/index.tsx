@@ -17,6 +17,7 @@ const NavBar: React.FC <NavBarType> = ({ scrollToSection, refs }) => {
             <div className={styles.rightMenu}>
                 <a className={styles.linkText} onClick={() => scrollToSection(refs.homeRef)} style={{cursor: "pointer"}}>Home</a>
                 <a className={styles.linkText} onClick={() => scrollToSection(refs.sobreRef)} style={{cursor: "pointer"}}>Sobre Mim</a>
+                <a className={styles.linkText} onClick={() => scrollToSection(refs.experienciasRef)} style={{cursor: "pointer"}}>Experiências</a>
                 <a className={styles.linkText} onClick={() => scrollToSection(refs.habilidadesRef)} style={{cursor: "pointer"}}>Habilidades</a>
                 <a className={styles.linkText} onClick={() => scrollToSection(refs.trabalhosRef)} style={{cursor: "pointer"}}>Trabalhos</a>
 

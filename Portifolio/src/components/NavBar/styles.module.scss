@@ -81,19 +81,33 @@
 
 
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
  
+  .main,
+  .mainScrolled {
+    padding: 1rem 2rem;
+
     .leftMenu {
-      padding-left: 5rem !important;  
+      width: 100%;
+      padding-left: 0;
+      gap: 0.5rem;
+      justify-content: center;
     }
 
     .rightMenu {
-      padding-right: 5rem !important; 
-    }
+      width: 100%;
+      padding-right: 0;
+      justify-content: center;
 
-    .rightMenu .linkText {
-      font-size: 1.1rem;
+      .linkText {
+        font-size: 1.1rem;
+      }
+
+      .btnContainer {
+        margin: 0;
+      }
     }
+  }
   
 }
 

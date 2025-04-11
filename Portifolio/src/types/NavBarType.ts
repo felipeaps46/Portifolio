@@ -5,6 +5,7 @@ export interface NavBarType {
     refs: {
         homeRef: RefObject<HTMLDivElement>;
         sobreRef: RefObject<HTMLDivElement>;
+        experienciasRef: RefObject<HTMLDivElement>;
         habilidadesRef: RefObject<HTMLDivElement>;
         trabalhosRef: RefObject<HTMLDivElement>;
         contatoRef: RefObject<HTMLDivElement>;
