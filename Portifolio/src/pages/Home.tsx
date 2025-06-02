@@ -22,7 +22,7 @@ import ImagemPessoal from "../imgs/imagemPessoal.jpeg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 
 import { HabilidadesData } from "../data/HabilidadesData"
 import { ProjetosData } from "../data/ProjetosData"
@@ -179,6 +179,15 @@ export default function Home() {
                                 >
                                     <Button label="Enviar Mensagem" icon={faWhatsapp} />
                                 </a>
+                                  <a href="https://www.linkedin.com/in/felipe-sousa-974004210/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >
+                                    <Button label="Acessar Linkedin" icon={faLinkedin}></Button>
+                                </a>
+                            </div>
+                            <div className={styles.btnContainer} data-aos="zoom-in" >
+                              
                             </div>
                         </div>
                         {/*

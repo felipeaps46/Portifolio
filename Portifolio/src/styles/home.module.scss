@@ -265,7 +265,10 @@
                 }
 
                 .btnContainer {
+                    display: flex;
+                    flex-direction: row;
                     padding-top: 1rem;
+                    gap: 1rem;
                 }
             }
 
@@ -585,7 +588,7 @@
             .secaoContato_Content {
                 flex-direction: row;
                 align-items: center;
-                padding: 3rem 1rem;
+                padding: 3rem 0rem;
                 gap: 2rem;
 
 
@@ -613,11 +616,15 @@
     }
 }
 
+@media only screen and (max-width: 530px) {
 
 
-
-
-
+.btnContainer{
+    a{
+        font-size: 0.5rem;
+    }
+}
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -726,6 +733,15 @@
 
         .titulo {
             font-size: 1.9rem;
+        }
+    }
+    .btnContainer{
+        display: flex;
+        flex-direction: column !important;
+        width: 80%;
+
+        button{
+            width: 100%;
         }
     }
 }
