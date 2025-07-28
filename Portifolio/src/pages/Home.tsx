@@ -100,7 +100,7 @@ export default function Home() {
                     <div className={styles.secaoSobre_Content}>
                         <div className={styles.secaoSobre_Esquerda} data-aos={isMobile ? "fade-up" : "fade-right"}>
                             <p>Meu nome é Felipe Sousa, estou cursando o terceiro período de Engenharia de Software na PUC Minas, onde estou desenvolvendo uma base sólida em programação e tecnologias inovadoras.</p>
-                            <p>Tenho experiência com linguagens como Java, JavaScript e Sass, e frameworks como React, além de estar constantemente aprimorando minhas habilidades em desenvolvimento de sistemas e automação.</p>
+                            <p>Tenho experiência com linguagens como Java, JavaScript e Sass, e frameworks como React e NodeJs, além de estar constantemente aprimorando minhas habilidades em desenvolvimento de sistemas e automação.</p>
                             <p>Minha jornada acadêmica e profissional é impulsionada por desafios, colaboração em equipe e pela busca por resultados impactantes. Estou motivado a contribuir para projetos que unam criatividade e tecnologia, transformando ideias em soluções reais.</p>
                         </div>
                         <div className={styles.secaoSobre_Direita} data-aos={isMobile ? "fade-up" : "fade-left"}>

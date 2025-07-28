@@ -1,4 +1,4 @@
-import { faReact, faJs, faGithub, faJava, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faJs, faGithub, faJava, faSass, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { SiTypescript } from "react-icons/si";
 
 
@@ -37,10 +37,18 @@ export const HabilidadesData = [
        
     },
     {
+        title: "NodeJs",
+        icon: faNodeJs,
+        color: "rgba(83, 153, 61, 0.7)"
+    },
+    {
+        title: "React Native",
+        icon: faReact,
+        color: "rgba(97, 218, 251, 0.7)"
+    },
+    {
         title: "Git / Github",
         icon: faGithub,
         color: "rgba(51, 51, 51, 0.7)"
-        
-       
     }
 ];
