@@ -1,0 +1,354 @@
+{
+    "header": {
+        "home": "Home",
+        "sobre": "About",
+        "habilidades": "Skills",
+        "projetos": "Projects",
+        "contato": "Contact"
+    },
+    "user": {
+        "desc": "I am a Full Stack Developer with experience in Java, JavaScript, TypeScript, and SQL, and frameworks like React, React Native, and Node.js. I develop solutions integrating AI, databases, security, and automation, focused on functional and scalable systems. I have a collaborative, communicative, and results-driven profile, enhancing skills through practical projects and emerging technologies. I aim to deliver innovative solutions that create value and optimize processes, contributing to the growth of teams and organizations.",
+        "fullstack": "Fullstack",
+        "backend": "Backend",
+        "ai": "AI",
+        "software": "Software",
+        "frontend": "Frontend"
+    },
+    "home": {
+        "desenvolvedor": "Developer",
+        "btnTexto01": "Download CV",
+        "btnTexto02": "Get in Touch"
+    },
+    "destaquesSecao": {
+        "titulo": "My Highlights",
+        "subtitulo": "See some of my main works here.",
+        "btnTexto": "See all Projects"
+    },
+    "footer": {
+        "navegacao": "Navigation",
+        "conecte": "Contact",
+        "direitos": "All rights reserved."
+    },
+    "projetosSecao": {
+        "titulo": "My Projects",
+        "subtitulo": "See some of my projects here.",
+        "filtros": {
+            "all": "All"
+        }
+    },
+    "sobreSecao": {
+        "titulo": "About Me"
+    },
+    "experienciaSecao": {
+        "titulo": "Experiences",
+        "subtitulo": "See here a little about my journey."
+    },
+    "habilidadesSecao": {
+        "titulo": "My Skills",
+        "subtitulo": "See some of my technical skills here.",
+        "filtros": {
+            "todos": "All",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "mobile": "Mobile",
+            "database": "Database",
+            "devops": "DevOps",
+            "testing": "Testing",
+            "design": "Design",
+            "tools": "Tools",
+            "outros": "Others"
+        }
+    },
+    "estatisticasSecao": {
+        "titulo": "Statistics",
+        "estatisticas": {
+            "projetos": "Projects",
+            "anos": "Years",
+            "clientes": "Clients",
+            "dedicacao": "Dedication",
+            "satisfacao": "Customer Satisfaction"
+        }
+    },
+    "projetoModal": {
+        "sobre": "About the project",
+        "tecnologias": "Technologies Used",
+        "btnTexto01": "Watch online",
+        "btnTexto02": "See code"
+    },
+    "contatoSecao": {
+        "titulo": "Contacts",
+        "subtitulo": "Did you like what you saw? Reach out through one of these channels.",
+        "cardEmail": {
+            "titulo": "Send your message",
+            "labelNome": "Name",
+            "labelTelefone": "Phone",
+            "labelMensagem": "Message",
+            "btnTexto": "Send Message"
+        },
+        "titulo02": "Connect Through",
+        "alert": "Please fill in all fields to send the message"
+    },
+    "chat": {
+        "titulo": "Personal Assistant",
+        "placeholder": "Type your message...",
+        "mensagemInicial": "Hello! How can I help you today? Ask anything about Felipe."
+    },
+    "servicosSecao": {
+        "titulo": "My Services",
+        "subtitulo": "Complete solutions to transform your ideas into digital reality."
+    },
+    "servicos": {
+        "sites": {
+            "titulo": "Website Creation",
+            "descricao": "Modern, responsive, and optimized institutional websites for your company"
+        },
+        "landing": {
+            "titulo": "Landing Pages",
+            "descricao": "Conversion-optimized pages to increase your sales and leads"
+        },
+        "ecommerce": {
+            "titulo": "E-commerce",
+            "descricao": "Complete online stores with payment system and product management"
+        },
+        "linkBio": {
+            "titulo": "Link in Bio",
+            "descricao": "Custom pages to centralize all your links and social media"
+        },
+        "manutencao": {
+            "titulo": "Maintenance",
+            "descricao": "Technical support, updates, and continuous improvements for your website"
+        },
+        "personalizado": {
+            "titulo": "Custom Project",
+            "descricao": "Tailor-made solutions for your business’s specific needs"
+        }
+    },
+    "experiencias": {
+        "experiencia01": {
+            "papel": "Best Software Project of the Second Semester",
+            "empresa": "PUC Minas",
+            "descricao": "Recognized again as the Best Interdisciplinary Project in the Second Semester, maintaining the position of Second Best Interdisciplinary Project among all semesters of the course.",
+            "tipo": "Study"
+        },
+        "experiencia02": {
+            "papel": "Freelancer - Web Development",
+            "empresa": "Voogle",
+            "descricao": "I developed a personalized web page for a client, meeting their specific design and functionality needs. For the project, I used React, TypeScript, and Tailwind to build a responsive and intuitive interface. I delivered the project within the agreed timeframe, achieving high client satisfaction.",
+            "tipo": "Work"
+        },
+        "experiencia03": {
+            "papel": "Best Software Project of the First Semester",
+            "empresa": "PUC Minas",
+            "descricao": "Received recognition as the Best Interdisciplinary Project of the First Semester and was ranked as the Second Best Interdisciplinary Project among all semesters of the course.",
+            "tipo": "Study"
+        },
+        "experiencia04": {
+            "papel": "Software Engineering",
+            "empresa": "PUC Minas",
+            "descricao": "Project-oriented education with a solid foundation in architecture, data structures, databases, and embedded systems. Emphasis on best practices (such as testing, version control, and CI/CD), agile methodologies, and AI fundamentals to build scalable, secure, and production-ready solutions.",
+            "tipo": "Study"
+        }
+    },
+    "projects": {
+        "btnTexto": "See Details",
+        "types": {
+            "sites": "Websites",
+            "landing": "Landing Pages",
+            "apps": "Apps",
+            "ecommerce": "E-Commerce",
+            "others": "Others"
+        },
+        "status": {
+            "inProgress": "In Progress",
+            "done": "Finished"
+        },
+        "GestorX": {
+            "title": "Business Management",
+            "description": "GestorX is a complete business management solution designed to centralize and optimize your company's internal processes. It brings together sales, purchasing, inventory, and financial modules in a single intuitive platform, ensuring full control over operations and results. With dynamic reports and customizable dashboards, it provides strategic support for faster decision-making, reduces operational costs, and increases business efficiency."
+        },
+        "Portifolio": {
+            "title": "Portfolio",
+            "description": "This portfolio was designed to be dynamic and conversational. In addition to showcasing my projects, experiences, and contact information, it features an AI assistant that helps visitors navigate and quickly understand what I do: explains technologies used, suggests relevant projects, and answers frequently asked questions. The goal is to transform the portfolio into a guided experience with contextual discoveries and natural interaction."
+        },
+        "G-agro": {
+            "title": "G-AGRO",
+            "description": "G-Agro is a system aimed at producers and agribusiness managers, offering a unified view of field operations. It allows organizing properties and production areas, tracking inputs and activities (planting, treatments, harvest), recording costs, and visualizing performance by crop. With concise dashboards, it facilitates bottleneck identification, inventory control, and profitability analysis."
+        },
+        "BasicoBemFeito": {
+            "title": "Básico Bem Feito",
+            "description": "Básico Bem Feito was born from the idea that simplicity and attention to detail enhance the user experience. It is a static website for a gym, built with focus on responsive layout, legible typography, and accessibility. It includes a simple functionality for creating workout plans and essential sections such as plans, schedules, and contact. A project that prioritizes front-end best practices from the very beginning."
+        },
+        "Optima": {
+            "title": "Optima",
+            "description": "Optima is a business management system that integrates the main processes of a company in one place. It covers sales, purchasing, inventory, and financial modules, allowing end-to-end control—from order entry to margin and profit tracking. With customizable dashboards and reports, it supports quick and informed decision-making, reduces rework, and increases operational visibility."
+        },
+        "Ajunta": {
+            "title": "Ajunta",
+            "description": "Ajunta is a social network created to value and integrate the artistic scene of Contagem. Artists can create profiles, publish works, connect with other creators, and discover local opportunities. The goal is to strengthen the cultural ecosystem, facilitate collaborations, and give visibility to talents through portfolios, events, and community interactions."
+        },
+        "Voogle": {
+            "title": "Voogle",
+            "description": "Voogle is a landing page custom-built for a client, focused on lead capture. The project prioritized responsive design, intuitive user experience, and optimized performance, ensuring visitors were clearly guided to the desired actions."
+        }
+    },
+    "os": {
+        "edition": "edition 26 · full stack",
+        "desktopIcons": "Desktop icons",
+        "apps": {
+            "welcome": "Welcome.exe",
+            "about": "About me.txt",
+            "projects": "Projects",
+            "exp": "experience.log",
+            "skills": "Skills",
+            "chat": "AI Chat.exe",
+            "mail": "Mail",
+            "trash": "Recycle bin",
+            "video": "Player",
+            "look": "Appearance",
+            "cv": "Resume.pdf"
+        },
+        "window": {
+            "minimize": "Minimize",
+            "close": "Close"
+        },
+        "welcome": {
+            "hello": "Hi, I'm Felipe.",
+            "text": "Full stack developer. This portfolio is an operating system: open the icons, drag windows by their title bar and explore at your own pace.",
+            "projects": "See projects",
+            "about": "About me",
+            "chat": "Talk to the AI",
+            "mail": "Send an email"
+        },
+        "about": {
+            "title": "About me.txt — System properties",
+            "photoAlt": "Photo of Felipe Pereira",
+            "processor": "Processor",
+            "processorValue": "Full Stack · AI · Automation",
+            "memory": "Memory",
+            "memoryValue": "{{count}} projects installed",
+            "version": "Version",
+            "versionValue": "Software Eng. · PUC Minas",
+            "location": "Location",
+            "locationValue": "Belo Horizonte, Brazil",
+            "services": "Services offered"
+        },
+        "projects": {
+            "title": "Projects — {{count}} items",
+            "address": "Address:",
+            "hint": "Click a folder to see details · {{done}} finished, {{progress}} in progress",
+            "play": "Play video",
+            "installing": "Installing… coming soon",
+            "imageAlt": "Screenshot of {{name}}",
+            "site": "Open site",
+            "github": "View on GitHub"
+        },
+        "exp": {
+            "title": "experience.log — Terminal",
+            "current": "present"
+        },
+        "skills": {
+            "title": "Skills — Control panel",
+            "categories": {
+                "Frontend": "Frontend",
+                "Backend": "Backend",
+                "Mobile": "Mobile",
+                "Database": "Database",
+                "DevOps": "DevOps",
+                "Testing": "Testing",
+                "Design": "Design",
+                "Tools": "Tools",
+                "Outros": "Other"
+            }
+        },
+        "chat": {
+            "title": "Chat with Felipe (AI)",
+            "you": "You",
+            "bot": "Felipe (AI)",
+            "send": "Send",
+            "typing": "Typing…",
+            "error": "Sorry, I couldn't answer right now. Please try again in a moment.",
+            "label": "Your message",
+            "suggestions": [
+                "Which projects use Java?",
+                "Do you take freelance work?",
+                "What AI experience do you have?"
+            ]
+        },
+        "mail": {
+            "title": "Mail — New message",
+            "to": "To:",
+            "name": "Name:",
+            "email": "Email:",
+            "phone": "Phone:",
+            "message": "Message",
+            "namePh": "Your name",
+            "emailPh": "you@email.com",
+            "phonePh": "Optional",
+            "messagePh": "Write your message…",
+            "send": "Send",
+            "sending": "Sending…",
+            "sent": "Message sent! I'll reply soon.",
+            "error": "Couldn't send it. Try again or reach me on LinkedIn.",
+            "required": "Fill in name, email and message to send."
+        },
+        "trash": {
+            "title": "Recycle bin — {{count}} items",
+            "empty": "Empty recycle bin",
+            "emptied": "The recycle bin is empty."
+        },
+        "video": {
+            "title": "Player — {{file}}",
+            "playing": "Playing: {{file}}",
+            "playlist": "Playlist",
+            "info": "no audio"
+        },
+        "look": {
+            "title": "Appearance",
+            "wallpaper": "Wallpaper",
+            "desktopColor": "Desktop color",
+            "accentColor": "Accent color (windows)",
+            "reset": "Restore defaults",
+            "ok": "OK",
+            "wallpapers": {
+                "dots": "Dots",
+                "grid": "Grid",
+                "bands": "Bands",
+                "plain": "Plain"
+            },
+            "colors": {
+                "night": "Night blue",
+                "moss": "Moss green",
+                "plum": "Plum",
+                "graphite": "Graphite",
+                "rust": "Rust",
+                "blue": "Blue",
+                "green": "Green",
+                "purple": "Purple"
+            }
+        },
+        "start": {
+            "button": "Start",
+            "menu": "Start menu",
+            "cv": "Download resume…",
+            "restart": "Restart…"
+        },
+        "taskbar": {
+            "soundOn": "Turn sounds on",
+            "soundOff": "Turn sounds off",
+            "language": "Switch language to Portuguese"
+        },
+        "boot": {
+            "label": "Starting Felipe/OS",
+            "hint": "Press Skip to go straight to the desktop",
+            "skip": "Skip",
+            "lines": [
+                "Felipe/OS BIOS v26.11 — Belo Horizonte, Brazil",
+                "Checking memory… {{count}} projects",
+                "Loading modules: React, TypeScript, Node.js, Java, Golang",
+                "Mounting drive FelipeOS:\\Projects",
+                "Connecting AI assistant (LangChain + Gemini)",
+                "Starting desktop…"
+            ]
+        }
+    }
+}
