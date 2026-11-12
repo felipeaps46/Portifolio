@@ -1,7 +1,7 @@
-import { Desktop } from "./os/Desktop";
+import { Site } from "./site/Site";
 
 function App() {
-  return <Desktop />;
+  return <Site />;
 }
 
 export default App;

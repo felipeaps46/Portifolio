@@ -31,7 +31,7 @@ export default async function handler(_req: VercelRequest, res: VercelResponse) 
       sample: text.slice(0, 200),
       timestamp: new Date().toISOString(),
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     clearTimeout(timeout);
     res.status(200).json({
       ok: false,

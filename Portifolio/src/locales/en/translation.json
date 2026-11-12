@@ -1,354 +1,244 @@
 {
-    "header": {
-        "home": "Home",
-        "sobre": "About",
-        "habilidades": "Skills",
-        "projetos": "Projects",
-        "contato": "Contact"
+  "projects": {
+    "GestorX": {
+      "title": "Business Management"
     },
-    "user": {
-        "desc": "I am a Full Stack Developer with experience in Java, JavaScript, TypeScript, and SQL, and frameworks like React, React Native, and Node.js. I develop solutions integrating AI, databases, security, and automation, focused on functional and scalable systems. I have a collaborative, communicative, and results-driven profile, enhancing skills through practical projects and emerging technologies. I aim to deliver innovative solutions that create value and optimize processes, contributing to the growth of teams and organizations.",
-        "fullstack": "Fullstack",
-        "backend": "Backend",
-        "ai": "AI",
-        "software": "Software",
-        "frontend": "Frontend"
+    "Portifolio": {
+      "title": "Portfolio"
     },
-    "home": {
-        "desenvolvedor": "Developer",
-        "btnTexto01": "Download CV",
-        "btnTexto02": "Get in Touch"
+    "G-agro": {
+      "title": "G-AGRO"
     },
-    "destaquesSecao": {
-        "titulo": "My Highlights",
-        "subtitulo": "See some of my main works here.",
-        "btnTexto": "See all Projects"
+    "BasicoBemFeito": {
+      "title": "Básico Bem Feito"
     },
-    "footer": {
-        "navegacao": "Navigation",
-        "conecte": "Contact",
-        "direitos": "All rights reserved."
+    "Optima": {
+      "title": "Optima"
     },
-    "projetosSecao": {
-        "titulo": "My Projects",
-        "subtitulo": "See some of my projects here.",
-        "filtros": {
-            "all": "All"
-        }
+    "Ajunta": {
+      "title": "Ajunta"
     },
-    "sobreSecao": {
-        "titulo": "About Me"
+    "Voogle": {
+      "title": "Voogle"
+    }
+  },
+  "site": {
+    "skip": "Skip to content",
+    "nav": {
+      "sections": "Sections",
+      "projects": "Projects",
+      "exp": "Experience",
+      "about": "About",
+      "contact": "Contact",
+      "lang": "Switch language to Portuguese",
+      "home": "Felipe Pereira, back to top"
     },
-    "experienciaSecao": {
-        "titulo": "Experiences",
-        "subtitulo": "See here a little about my journey."
+    "hero": {
+      "meta": "Portfolio — 2026",
+      "place": "Belo Horizonte · Brazil",
+      "role": "Full stack developer.",
+      "lead": "Interfaces that hit hard and systems that hold up. React, TypeScript, Node, Java, Python and AI — from the front end to the database.",
+      "play": "Hit play",
+      "playing": "Playing — press to stop",
+      "bpm": "120 BPM · beat made in your browser",
+      "playLabel": "Play the beat",
+      "pauseLabel": "Pause the beat"
     },
-    "habilidadesSecao": {
-        "titulo": "My Skills",
-        "subtitulo": "See some of my technical skills here.",
-        "filtros": {
-            "todos": "All",
-            "frontend": "Frontend",
-            "backend": "Backend",
-            "mobile": "Mobile",
-            "database": "Database",
-            "devops": "DevOps",
-            "testing": "Testing",
-            "design": "Design",
-            "tools": "Tools",
-            "outros": "Others"
-        }
-    },
-    "estatisticasSecao": {
-        "titulo": "Statistics",
-        "estatisticas": {
-            "projetos": "Projects",
-            "anos": "Years",
-            "clientes": "Clients",
-            "dedicacao": "Dedication",
-            "satisfacao": "Customer Satisfaction"
-        }
-    },
-    "projetoModal": {
-        "sobre": "About the project",
-        "tecnologias": "Technologies Used",
-        "btnTexto01": "Watch online",
-        "btnTexto02": "See code"
-    },
-    "contatoSecao": {
-        "titulo": "Contacts",
-        "subtitulo": "Did you like what you saw? Reach out through one of these channels.",
-        "cardEmail": {
-            "titulo": "Send your message",
-            "labelNome": "Name",
-            "labelTelefone": "Phone",
-            "labelMensagem": "Message",
-            "btnTexto": "Send Message"
-        },
-        "titulo02": "Connect Through",
-        "alert": "Please fill in all fields to send the message"
-    },
-    "chat": {
-        "titulo": "Personal Assistant",
-        "placeholder": "Type your message...",
-        "mensagemInicial": "Hello! How can I help you today? Ask anything about Felipe."
-    },
-    "servicosSecao": {
-        "titulo": "My Services",
-        "subtitulo": "Complete solutions to transform your ideas into digital reality."
-    },
-    "servicos": {
-        "sites": {
-            "titulo": "Website Creation",
-            "descricao": "Modern, responsive, and optimized institutional websites for your company"
-        },
-        "landing": {
-            "titulo": "Landing Pages",
-            "descricao": "Conversion-optimized pages to increase your sales and leads"
-        },
-        "ecommerce": {
-            "titulo": "E-commerce",
-            "descricao": "Complete online stores with payment system and product management"
-        },
-        "linkBio": {
-            "titulo": "Link in Bio",
-            "descricao": "Custom pages to centralize all your links and social media"
-        },
-        "manutencao": {
-            "titulo": "Maintenance",
-            "descricao": "Technical support, updates, and continuous improvements for your website"
-        },
-        "personalizado": {
-            "titulo": "Custom Project",
-            "descricao": "Tailor-made solutions for your business’s specific needs"
-        }
-    },
-    "experiencias": {
-        "experiencia01": {
-            "papel": "Best Software Project of the Second Semester",
-            "empresa": "PUC Minas",
-            "descricao": "Recognized again as the Best Interdisciplinary Project in the Second Semester, maintaining the position of Second Best Interdisciplinary Project among all semesters of the course.",
-            "tipo": "Study"
-        },
-        "experiencia02": {
-            "papel": "Freelancer - Web Development",
-            "empresa": "Voogle",
-            "descricao": "I developed a personalized web page for a client, meeting their specific design and functionality needs. For the project, I used React, TypeScript, and Tailwind to build a responsive and intuitive interface. I delivered the project within the agreed timeframe, achieving high client satisfaction.",
-            "tipo": "Work"
-        },
-        "experiencia03": {
-            "papel": "Best Software Project of the First Semester",
-            "empresa": "PUC Minas",
-            "descricao": "Received recognition as the Best Interdisciplinary Project of the First Semester and was ranked as the Second Best Interdisciplinary Project among all semesters of the course.",
-            "tipo": "Study"
-        },
-        "experiencia04": {
-            "papel": "Software Engineering",
-            "empresa": "PUC Minas",
-            "descricao": "Project-oriented education with a solid foundation in architecture, data structures, databases, and embedded systems. Emphasis on best practices (such as testing, version control, and CI/CD), agile methodologies, and AI fundamentals to build scalable, secure, and production-ready solutions.",
-            "tipo": "Study"
-        }
+    "marquee": {
+      "stack": "React ✕ TypeScript ✕ Next.js ✕ Node.js ✕ Java ✕ Spring Boot ✕ Python ✕ FastAPI ✕ LangChain ✕ PostgreSQL ✕ Docker ✕",
+      "areas": "Full stack ✕ Frontend ✕ Backend ✕ Databases ✕ Artificial intelligence ✕ Automation ✕",
+      "archive": "Awards ✕ Certificates ✕ Papers ✕"
     },
     "projects": {
-        "btnTexto": "See Details",
-        "types": {
-            "sites": "Websites",
-            "landing": "Landing Pages",
-            "apps": "Apps",
-            "ecommerce": "E-Commerce",
-            "others": "Others"
+      "title": "Projects",
+      "count": "{{count}} projects",
+      "view": "View mode",
+      "list": "Show as list",
+      "grid": "Show as grid",
+      "done": "Done",
+      "wip": "In progress",
+      "soon": "Demo coming soon",
+      "watch": "Watch demo",
+      "github": "View on GitHub",
+      "site": "Open the site",
+      "screen": "Screenshot of {{name}}",
+      "video": "{{name}} demo",
+      "close": "Close video",
+      "items": {
+        "voogle": {
+          "kind": "Landing page",
+          "desc": "A custom landing page built to capture leads for a client. Responsive design, clear navigation and optimized performance that take visitors straight to the call to action."
         },
-        "status": {
-            "inProgress": "In Progress",
-            "done": "Finished"
+        "gagro": {
+          "kind": "Web app",
+          "desc": "A system for agribusiness owners and managers: farms, supplies, planting, harvest and costs per season in one dashboard, to spot bottlenecks and measure profitability."
         },
-        "GestorX": {
-            "title": "Business Management",
-            "description": "GestorX is a complete business management solution designed to centralize and optimize your company's internal processes. It brings together sales, purchasing, inventory, and financial modules in a single intuitive platform, ensuring full control over operations and results. With dynamic reports and customizable dashboards, it provides strategic support for faster decision-making, reduces operational costs, and increases business efficiency."
+        "optima": {
+          "kind": "Business management",
+          "desc": "Sales, purchasing, inventory and finance in one place, from the order to the profit margin, with customizable dashboards and reports."
         },
-        "Portifolio": {
-            "title": "Portfolio",
-            "description": "This portfolio was designed to be dynamic and conversational. In addition to showcasing my projects, experiences, and contact information, it features an AI assistant that helps visitors navigate and quickly understand what I do: explains technologies used, suggests relevant projects, and answers frequently asked questions. The goal is to transform the portfolio into a guided experience with contextual discoveries and natural interaction."
+        "bbf": {
+          "kind": "Website",
+          "desc": "A carefully built gym website: responsive layout, readable type, accessibility and a simple workout plan builder."
         },
-        "G-agro": {
-            "title": "G-AGRO",
-            "description": "G-Agro is a system aimed at producers and agribusiness managers, offering a unified view of field operations. It allows organizing properties and production areas, tracking inputs and activities (planting, treatments, harvest), recording costs, and visualizing performance by crop. With concise dashboards, it facilitates bottleneck identification, inventory control, and profitability analysis."
+        "portfolio": {
+          "kind": "Website + AI",
+          "desc": "This site. Besides the projects, it has an AI assistant that knows my work and answers visitors' questions."
         },
-        "BasicoBemFeito": {
-            "title": "Básico Bem Feito",
-            "description": "Básico Bem Feito was born from the idea that simplicity and attention to detail enhance the user experience. It is a static website for a gym, built with focus on responsive layout, legible typography, and accessibility. It includes a simple functionality for creating workout plans and essential sections such as plans, schedules, and contact. A project that prioritizes front-end best practices from the very beginning."
+        "gestorx": {
+          "kind": "Business management",
+          "desc": "Complete management with sales, purchasing, inventory and finance in a single platform, with dynamic reports and customizable dashboards."
         },
-        "Optima": {
-            "title": "Optima",
-            "description": "Optima is a business management system that integrates the main processes of a company in one place. It covers sales, purchasing, inventory, and financial modules, allowing end-to-end control—from order entry to margin and profit tracking. With customizable dashboards and reports, it supports quick and informed decision-making, reduces rework, and increases operational visibility."
-        },
-        "Ajunta": {
-            "title": "Ajunta",
-            "description": "Ajunta is a social network created to value and integrate the artistic scene of Contagem. Artists can create profiles, publish works, connect with other creators, and discover local opportunities. The goal is to strengthen the cultural ecosystem, facilitate collaborations, and give visibility to talents through portfolios, events, and community interactions."
-        },
-        "Voogle": {
-            "title": "Voogle",
-            "description": "Voogle is a landing page custom-built for a client, focused on lead capture. The project prioritized responsive design, intuitive user experience, and optimized performance, ensuring visitors were clearly guided to the desired actions."
+        "ajunta": {
+          "kind": "Social network",
+          "desc": "A social network for the art scene in Contagem: profiles, published work, connections between creators and local opportunities."
         }
+      }
     },
-    "os": {
-        "edition": "edition 26 · full stack",
-        "desktopIcons": "Desktop icons",
-        "apps": {
-            "welcome": "Welcome.exe",
-            "about": "About me.txt",
-            "projects": "Projects",
-            "exp": "experience.log",
-            "skills": "Skills",
-            "chat": "AI Chat.exe",
-            "mail": "Mail",
-            "trash": "Recycle bin",
-            "video": "Player",
-            "look": "Appearance",
-            "cv": "Resume.pdf"
+    "exp": {
+      "title": "Experience",
+      "hint": "Keep scrolling →",
+      "items": {
+        "vtreal": {
+          "tag": "01 · Current",
+          "title": "APIs, databases and deploys",
+          "bullets": [
+            "Built and refactored REST APIs, making backend services more consistent and easier to maintain.",
+            "Modeled relational databases and set up web servers and remote machines.",
+            "Deployed applications to different environments and built web interfaces.",
+            "Took part in data analysis and on-site software rollout."
+          ],
+          "name": "VT Real",
+          "role": "Full stack developer intern",
+          "when": "Oct 2025 — Nov 2026 · Remote"
         },
-        "window": {
-            "minimize": "Minimize",
-            "close": "Close"
+        "voogle": {
+          "tag": "02 · Freelance",
+          "title": "Custom landing page",
+          "text": "Built a custom web page for a client, meeting their specific design and functionality needs. I used React, TypeScript and TailwindCSS to create a responsive, intuitive interface, delivered on schedule.",
+          "cta": "See the project",
+          "name": "Voogle",
+          "role": "Web developer · Freelancer",
+          "when": "2024 · Belo Horizonte"
         },
-        "welcome": {
-            "hello": "Hi, I'm Felipe.",
-            "text": "Full stack developer. This portfolio is an operating system: open the icons, drag windows by their title bar and explore at your own pace.",
-            "projects": "See projects",
-            "about": "About me",
-            "chat": "Talk to the AI",
-            "mail": "Send an email"
+        "awards": {
+          "tag": "03 · Awards",
+          "title": "Best project, three times",
+          "bullets": [
+            "Best Interdisciplinary Project in the 1st semester, and second best across all semesters of the program.",
+            "Best again in the 2nd semester, keeping second place overall.",
+            "Best Interdisciplinary Project in the 4th semester."
+          ],
+          "cta": "See photos and awards",
+          "name": "PUC Minas",
+          "role": "Award-winning academic projects",
+          "when": "2024 — 2026 · Belo Horizonte"
         },
-        "about": {
-            "title": "About me.txt — System properties",
-            "photoAlt": "Photo of Felipe Pereira",
-            "processor": "Processor",
-            "processorValue": "Full Stack · AI · Automation",
-            "memory": "Memory",
-            "memoryValue": "{{count}} projects installed",
-            "version": "Version",
-            "versionValue": "Software Eng. · PUC Minas",
-            "location": "Location",
-            "locationValue": "Belo Horizonte, Brazil",
-            "services": "Services offered"
+        "degree": {
+          "tag": "04 · Degree",
+          "title": "Software Engineering",
+          "text": "A project-driven program grounded in architecture, data structures, databases and embedded systems, with a focus on testing, version control, CI/CD, agile methods and AI fundamentals.",
+          "note": "Expected graduation: Dec 2027",
+          "name": "PUC Minas",
+          "role": "Bachelor's · 6th semester",
+          "when": "Jan 2024 — Dec 2027 · Belo Horizonte"
         },
-        "projects": {
-            "title": "Projects — {{count}} items",
-            "address": "Address:",
-            "hint": "Click a folder to see details · {{done}} finished, {{progress}} in progress",
-            "play": "Play video",
-            "installing": "Installing… coming soon",
-            "imageAlt": "Screenshot of {{name}}",
-            "site": "Open site",
-            "github": "View on GitHub"
-        },
-        "exp": {
-            "title": "experience.log — Terminal",
-            "current": "present"
-        },
-        "skills": {
-            "title": "Skills — Control panel",
-            "categories": {
-                "Frontend": "Frontend",
-                "Backend": "Backend",
-                "Mobile": "Mobile",
-                "Database": "Database",
-                "DevOps": "DevOps",
-                "Testing": "Testing",
-                "Design": "Design",
-                "Tools": "Tools",
-                "Outros": "Other"
-            }
-        },
-        "chat": {
-            "title": "Chat with Felipe (AI)",
-            "you": "You",
-            "bot": "Felipe (AI)",
-            "send": "Send",
-            "typing": "Typing…",
-            "error": "Sorry, I couldn't answer right now. Please try again in a moment.",
-            "label": "Your message",
-            "suggestions": [
-                "Which projects use Java?",
-                "Do you take freelance work?",
-                "What AI experience do you have?"
-            ]
-        },
-        "mail": {
-            "title": "Mail — New message",
-            "to": "To:",
-            "name": "Name:",
-            "email": "Email:",
-            "phone": "Phone:",
-            "message": "Message",
-            "namePh": "Your name",
-            "emailPh": "you@email.com",
-            "phonePh": "Optional",
-            "messagePh": "Write your message…",
-            "send": "Send",
-            "sending": "Sending…",
-            "sent": "Message sent! I'll reply soon.",
-            "error": "Couldn't send it. Try again or reach me on LinkedIn.",
-            "required": "Fill in name, email and message to send."
-        },
-        "trash": {
-            "title": "Recycle bin — {{count}} items",
-            "empty": "Empty recycle bin",
-            "emptied": "The recycle bin is empty."
-        },
-        "video": {
-            "title": "Player — {{file}}",
-            "playing": "Playing: {{file}}",
-            "playlist": "Playlist",
-            "info": "no audio"
-        },
-        "look": {
-            "title": "Appearance",
-            "wallpaper": "Wallpaper",
-            "desktopColor": "Desktop color",
-            "accentColor": "Accent color (windows)",
-            "reset": "Restore defaults",
-            "ok": "OK",
-            "wallpapers": {
-                "dots": "Dots",
-                "grid": "Grid",
-                "bands": "Bands",
-                "plain": "Plain"
-            },
-            "colors": {
-                "night": "Night blue",
-                "moss": "Moss green",
-                "plum": "Plum",
-                "graphite": "Graphite",
-                "rust": "Rust",
-                "blue": "Blue",
-                "green": "Green",
-                "purple": "Purple"
-            }
-        },
-        "start": {
-            "button": "Start",
-            "menu": "Start menu",
-            "cv": "Download resume…",
-            "restart": "Restart…"
-        },
-        "taskbar": {
-            "soundOn": "Turn sounds on",
-            "soundOff": "Turn sounds off",
-            "language": "Switch language to Portuguese"
-        },
-        "boot": {
-            "label": "Starting Felipe/OS",
-            "hint": "Press Skip to go straight to the desktop",
-            "skip": "Skip",
-            "lines": [
-                "Felipe/OS BIOS v26.11 — Belo Horizonte, Brazil",
-                "Checking memory… {{count}} projects",
-                "Loading modules: React, TypeScript, Node.js, Java, Golang",
-                "Mounting drive FelipeOS:\\Projects",
-                "Connecting AI assistant (LangChain + Gemini)",
-                "Starting desktop…"
-            ]
+        "school": {
+          "tag": "05 · School",
+          "title": "Where it all started",
+          "text": "Finished high school in 2023 in Lagoa Santa. The next year, I started Software Engineering at PUC Minas.",
+          "cta": "Next step: your project?",
+          "name": "Colégio M2",
+          "role": "High school",
+          "when": "Graduated 2023 · Lagoa Santa"
         }
+      },
+      "photoAlt": {
+        "vtreal": "Felipe Pereira",
+        "voogle": "Screenshot of the Voogle landing page",
+        "awards": "Team holding the Best Interdisciplinary Project certificate",
+        "degree": "Team on stage at PUC Minas after a presentation"
+      }
+    },
+    "about": {
+      "title": "About",
+      "hint": "Photos, awards, certificates and papers",
+      "place": "Belo Horizonte · Brazil",
+      "bio": "Software Engineering student at PUC Minas and full stack developer. I like bringing front end, back end, AI, automation and databases together into well-structured solutions.",
+      "cv": "Download résumé (PDF)",
+      "award1Tag": "Award · 1st semester",
+      "award1": "Best interdisciplinary project",
+      "award1Alt": "Project team holding the Best Interdisciplinary Project certificate at PUC Minas",
+      "award2Tag": "Award · 2nd semester",
+      "award2": "On top again",
+      "award2Alt": "Team on stage after presenting the project at PUC Minas",
+      "times": "Best project · 1st, 2nd and 4th semester",
+      "ring": "PUC MINAS · SOFTWARE ENGINEERING ·",
+      "semester": "6th",
+      "semesterLabel": "Semester · PUC Minas",
+      "stack": "Stack",
+      "languages": "PT native · EN intermediate · DE basic",
+      "certTag": "Courses",
+      "cert": "Certificates",
+      "papersTag": "Research",
+      "papers": "Papers"
+    },
+    "contact": {
+      "tag": "Contact · Projects, freelance and jobs",
+      "line1": "Let's work",
+      "line2": "together",
+      "ai": "Ask the AI",
+      "made": "Built with React + TypeScript",
+      "top": "Back to top ↑"
+    },
+    "chat": {
+      "title": "Ask about Felipe",
+      "intro": "Hi! Ask anything about Felipe: projects, experience and tech.",
+      "placeholder": "Type your question…",
+      "label": "Your question",
+      "send": "Send",
+      "you": "You",
+      "bot": "AI",
+      "typing": "Thinking…",
+      "error": "I couldn't answer right now. Try again in a few seconds.",
+      "close": "Close chat",
+      "suggestions": [
+        "What projects has he built?",
+        "Which technologies does he use?",
+        "Where does he study?"
+      ]
+    },
+    "archive": {
+      "back": "← Back to the portfolio",
+      "tag": "About · Archive",
+      "title": "Archive",
+      "sections": "Archive sections",
+      "awards": "Awards",
+      "awardsHint": "PUC Minas · Software Engineering",
+      "items": {
+        "a1": {
+          "tag": "01 · 1st semester",
+          "title": "Best software project",
+          "text": "Best Interdisciplinary Project of the first semester, and second best across all semesters of the program."
+        },
+        "a2": {
+          "tag": "02 · 2nd semester",
+          "title": "Best software project, again",
+          "text": "Recognized once more as the Best Interdisciplinary Project, now in the second semester, keeping second place across all semesters."
+        },
+        "a3": {
+          "tag": "03 · 4th semester",
+          "title": "Best project, third time",
+          "text": "Recognized as the Best Interdisciplinary Project in the fourth semester, completing a consistent track record throughout the program."
+        }
+      },
+      "certs": "Certificates",
+      "certsHint": "Courses and training",
+      "papers": "Papers",
+      "papersHint": "Research and articles",
+      "empty": "Coming soon. This part is being put together.",
+      "viewCert": "View certificate",
+      "readPaper": "Read PDF ↗"
     }
+  }
 }

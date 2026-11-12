@@ -1,20 +1,18 @@
-# Felipe/OS — Portfólio de Felipe Pereira
+# Portfólio de Felipe Pereira
 
 **🌐 [felipe-pereira.vercel.app](https://felipe-pereira.vercel.app/)**
 
-Meu portfólio é um sistema operacional retrô que roda no navegador. Em vez de rolar uma página, o visitante explora uma área de trabalho: abre ícones, arrasta janelas e conversa com um assistente de IA que conhece meu trabalho.
+Um portfólio com personalidade: tipografia grande em caixa alta, preto e osso como cores calmas e um laranja que faz todo o barulho. A ideia veio das músicas que eu gosto de ouvir. Dá até para apertar o play na capa e o site inteiro pulsa no ritmo de uma batida gerada pelo navegador.
 
-<img src="./images/felipe-os.png" alt="Área de trabalho do Felipe/OS com as janelas Projetos e Bem-vindo abertas" width="800">
+<img src="./images/felipe-portfolio.png" alt="Capa do portfólio com o nome Felipe Pereira em letras grandes e o botão de play laranja" width="800">
 
 ## O que tem dentro
 
-- **Projetos:** um explorador de arquivos com cada projeto, detalhes, tecnologias e um player para assistir aos vídeos de demonstração.
+- **Projetos:** em grade, como capas de álbum, ou em lista. Cada projeto abre com descrição, tecnologias e vídeo de demonstração.
+- **Experiência:** os slides passam para o lado conforme você rola a página.
+- **Sobre:** um mosaico com fotos, prêmios e stack, que leva ao **Arquivo** com prêmios, certificados e papers.
 - **Chat com IA:** um assistente feito com LangChain e Gemini que responde perguntas sobre meus projetos e minha experiência.
-- **Sobre mim, experiência e habilidades:** em janelas no estilo "Propriedades do sistema", terminal e painel de controle.
-- **Correio:** para enviar uma mensagem direto do site.
-- **Detalhes de sistema:** tela de inicialização, sons opcionais, papéis de parede e cores personalizáveis, menu Iniciar e versão em português e inglês.
-
-Funciona no celular também: as janelas ocupam a tela inteira.
+- **Detalhes:** cursor que cresce e inverte as cores sobre as imagens, versão em português e inglês e layout pensado para o celular.
 
 ## Tecnologias
 
