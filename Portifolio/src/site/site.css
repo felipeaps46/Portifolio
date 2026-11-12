@@ -238,9 +238,7 @@ a.b:hover .arrow { transform: translate(6px, -6px); }
 .tab:hover { border-color: var(--loud); color: var(--loud); }
 .awards { border-bottom: 1px solid var(--line); }
 .award { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: center; padding: 48px 0; border-top: 1px solid var(--line); }
-.award img, .award__empty { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-.award__empty { border: 1px dashed var(--line-2); display: grid; place-items: center; }
-.award__empty .display { font-size: 120px; line-height: 0.85; }
+.award img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .award__text { display: flex; flex-direction: column; gap: 18px; }
 .award__title { margin: 0; font-size: clamp(36px, 3.4vw, 48px); line-height: 0.95; }
 .award__p { margin: 0; font-size: 18px; line-height: 1.55; color: var(--body); }

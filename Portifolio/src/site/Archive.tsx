@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { award1, award2, CERTIFICATES, PAPERS } from "./data";
+import { award1, award2, award3, CERTIFICATES, PAPERS } from "./data";
 import { Header } from "./Header";
 import { Marquee } from "./Hero";
 import { Footer } from "./Contact";
@@ -7,7 +7,7 @@ import { Footer } from "./Contact";
 const AWARDS = [
   { key: "a1", img: award1, alt: "site.about.award1Alt", pos: "50% 50%" },
   { key: "a2", img: award2, alt: "site.about.award2Alt", pos: "50% 55%" },
-  { key: "a3" },
+  { key: "a3", img: award3, alt: "site.archive.award3Alt", pos: "50% 45%" },
 ] as const;
 
 export function Archive() {
@@ -41,13 +41,7 @@ export function Archive() {
           <div className="awards">
             {AWARDS.map((a) => (
               <div key={a.key} className="award">
-                {"img" in a ? (
-                  <img src={a.img} alt={t(a.alt)} data-cursor="media" loading="lazy" style={{ objectPosition: a.pos }} />
-                ) : (
-                  <div className="award__empty scan">
-                    <span className="display loud-text">3×</span>
-                  </div>
-                )}
+                <img src={a.img} alt={t(a.alt)} data-cursor="media" loading="lazy" style={{ objectPosition: a.pos }} />
                 <div className="award__text">
                   <span className="mono loud-text">{t(`site.archive.items.${a.key}.tag`)}</span>
                   <p className="display award__title">{t(`site.archive.items.${a.key}.title`)}</p>

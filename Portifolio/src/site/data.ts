@@ -4,8 +4,9 @@ import profile from "../assets/profile.jpeg";
 import voogleImage from "../assets/voogleImage.png";
 import award1 from "../assets/award-1.jpg";
 import award2 from "../assets/award-2.jpg";
+import award3 from "../assets/award-3.jpg";
 
-export { profile, award1, award2 };
+export { profile, award1, award2, award3 };
 
 // Ordem em que os projetos aparecem e a chave de cada um em site.projects.items.
 const ORDER: { id: string; key: string }[] = [
