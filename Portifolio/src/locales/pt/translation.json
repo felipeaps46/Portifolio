@@ -239,6 +239,16 @@
       "empty": "Em breve. Esta parte está sendo organizada.",
       "viewCert": "Ver certificado",
       "readPaper": "Ler PDF ↗"
+    },
+    "spotify": {
+      "open": "Ouça a trilha do site no Spotify",
+      "title": "Trilha do site",
+      "tracks": "Músicas",
+      "close": "Fechar player",
+      "playing": "No Spotify · {{title}}",
+      "bpm": "{{bpm}} BPM · o site pulsa no ritmo",
+      "note": "Sem login no Spotify, toca uma prévia de 30 s. O pulso usa o BPM da música, então pode escorregar um pouco.",
+      "failed": "Não consegui carregar o player do Spotify agora."
     }
   }
 }

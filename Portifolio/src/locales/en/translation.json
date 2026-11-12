@@ -239,6 +239,16 @@
       "empty": "Coming soon. This part is being put together.",
       "viewCert": "View certificate",
       "readPaper": "Read PDF ↗"
+    },
+    "spotify": {
+      "open": "Listen to the site's soundtrack on Spotify",
+      "title": "Site soundtrack",
+      "tracks": "Tracks",
+      "close": "Close player",
+      "playing": "On Spotify · {{title}}",
+      "bpm": "{{bpm}} BPM · the site pulses along",
+      "note": "Without a Spotify login, a 30 s preview plays. The pulse follows the song's BPM, so it may drift a little.",
+      "failed": "Couldn't load the Spotify player right now."
     }
   }
 }
