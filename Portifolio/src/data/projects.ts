@@ -38,7 +38,7 @@ export const projects: CardType[] = [
     id: "3",
     title: "projects.Portifolio.title",
     description: "projects.Portifolio.description",
-    languages: ["React", "TypeScript", "Langchain", "Gemini", "Python", "Fast API", "Material UI"],
+    languages: ["React", "TypeScript", "Python", "FastAPI", "LangChain", "Gemini"],
     type: "projects.types.sites",
     status: "projects.status.done",
     image: portifolioImage,
